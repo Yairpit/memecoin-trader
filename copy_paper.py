@@ -31,10 +31,11 @@ RPC_URL = (f"https://mainnet.helius-rpc.com/?api-key={HELIUS_API_KEY}"
 
 # Nombre -> wallet DUENA (no la cuenta del token). Cambia los nombres si los sabes.
 WALLETS = {
-    "Rowdy":   "CzU8MaRcwvwUoNkwJFLbvtFWJugcEXAhDDQqNFE4ybb7",
-    "trader2": "9en5cByMtpnMzgJLG1VCscALno8N6MYsJfug9fyDYgvk",
-    "trader3": "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM",
-    "trader4": "FwF5ddHTvMKBiWHVNjPjwGaxU55c96HeQ7TuQ9BnThXV",
+    "Rowdy":        "CzU8MaRcwvwUoNkwJFLbvtFWJugcEXAhDDQqNFE4ybb7",
+    "pointfarmcap": "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit",
+    "trader3":      "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM",
+    # Para agregar otro trader, copia su wallet de la columna "Account" (no "Token Account"):
+    # "otro": "DIRECCION_AQUI",
 }
 
 CAPITAL_USD = 100.0          # capital simulado inicial
