@@ -2,12 +2,12 @@ name: copy-paper
 
 on:
   schedule:
-    - cron: "0 */6 * * *"      # arranca un turno nuevo cada 6 horas
+    - cron: "*/30 * * * *"      # red de seguridad: si la cadena se rompe, arranca de nuevo en <=30 min
   workflow_dispatch:            # tambien se puede lanzar a mano desde la pestana Actions
 
 concurrency:
   group: copy-paper
-  cancel-in-progress: false
+  cancel-in-progress: false     # nunca corren dos turnos a la vez
 
 permissions:
   contents: write               # para guardar copy_state.json y copy_trades.csv en el repo
@@ -16,7 +16,7 @@ permissions:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 355
+    timeout-minutes: 358
     steps:
       - uses: actions/checkout@v4
 
@@ -26,24 +26,44 @@ jobs:
 
       - run: pip install requests
 
-      - name: Correr bot (turno de ~5h45)
+      - name: Correr bot 24/7 (turnos de ~5h45; cada turno relanza el siguiente)
         env:
           HELIUS_API_KEY: ${{ secrets.HELIUS_API_KEY }}
           MAX_RUN_MINUTES: "345"
-        run: python copy_paper.py
+        run: |
+          git config user.name "copy-bot"
+          git config user.email "copy-bot@users.noreply.github.com"
+          # Mientras corre, guarda el estado en el repo cada hora (para ver el avance y no perderlo)
+          (
+            while true; do
+              sleep 3600
+              for f in copy_state.json copy_trades.csv; do if [ -f "$f" ]; then git add "$f"; fi; done
+              git commit -m "estado parcial $(date -u +%Y-%m-%d_%H:%M)" || true
+              git pull --rebase --autostash || true
+              git push || true
+            done
+          ) &
+          SAVER=$!
+          trap 'kill $SAVER 2>/dev/null || true' EXIT
+          python copy_paper.py
 
       - name: Guardar estado en el repo
         if: always()
         run: |
           git config user.name "copy-bot"
           git config user.email "copy-bot@users.noreply.github.com"
-          git add copy_state.json copy_trades.csv || true
+          for f in copy_state.json copy_trades.csv; do if [ -f "$f" ]; then git add "$f"; fi; done
           git commit -m "estado $(date -u +%Y-%m-%d_%H:%M)" || echo "sin cambios"
-          git pull --rebase || true
+          git pull --rebase --autostash || true
           git push || true
 
       - name: Relanzar el siguiente turno enseguida (sin esperar al cron)
         if: success() || failure()   # si cancelas a mano, NO se relanza
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh workflow run copy_paper.yml --ref ${{ github.ref_name }} || true
+        run: |
+          for i in 1 2 3; do
+            gh workflow run copy_paper.yml --ref ${{ github.ref_name }} && break
+            sleep 10
+          done
+
