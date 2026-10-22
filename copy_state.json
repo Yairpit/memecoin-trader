@@ -1,11 +1,29 @@
 {
- "cash": 100.0,
- "positions": {},
+ "cash": 92.0,
+ "positions": {
+  "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump": {
+   "trader": "trader3",
+   "symbol": "Dacity",
+   "tokens": 842.5729112809023,
+   "cost_usd": 8.0,
+   "entry_price": 0.00939978,
+   "trader_price": 0.009304760275373003,
+   "opened": 1792703060.689745
+  }
+ },
  "closed": [],
  "last_sig": {
-  "CzU8MaRcwvwUoNkwJFLbvtFWJugcEXAhDDQqNFE4ybb7": "2EuJWj69nGbxyomqCw5h5raaPZFBo4LMYP73G7yyYwq2PNgCj8m1qHVxJs1bxDszCenpF6XmnP1otzdYP6GTjTRf",
+  "CzU8MaRcwvwUoNkwJFLbvtFWJugcEXAhDDQqNFE4ybb7": "TzUFCu3nedvzRBTH8XmtttZsPETG2gYhoUAkRBpmNsBagETgBRUtvirsFevUu6H1Mke29BxmaDsHjAE1YjCdxgk",
   "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "5cwZ9DonDtVg21uBY5mXKaYtRFZum9u8KGPwNhzExqENBDfYLiR9yqVhjyusCUT4MFUFA1svgrFrKSM2dGczDDdf",
-  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "4bWq8c3a73P1CuShpAhhxJkRfibnvp2VEzPmEQSFod22b5edcAabjkifEAc7eygCMeZLjUYQAcZvFM2PyKYJbmGq"
+  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "5n6ho3A87KfvzWijCvjeNvriAvUhFRStDLpnuCK7U5JCkJiMPhWKQSZRNfUr1FYkZ7BNNnJe6cWJ7MFvhhBMz78r"
  },
- "wants": {}
+ "wants": {
+  "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump": {
+   "trader": "trader3",
+   "cum": 5000.0,
+   "usd_sum": 5000.0,
+   "tok_sum": 537359.3571490012,
+   "since": 1792703060.5714123
+  }
+ }
 }
