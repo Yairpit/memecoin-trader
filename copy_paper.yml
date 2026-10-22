@@ -42,9 +42,9 @@ jobs:
               git pull --rebase --autostash || true
               git push || true
             done
-          ) &
+          ) >/dev/null 2>&1 &     # salida redirigida: si no, el paso se queda colgado al terminar el bot
           SAVER=$!
-          trap 'kill $SAVER 2>/dev/null || true' EXIT
+          trap 'kill $SAVER 2>/dev/null || true; pkill -P $SAVER 2>/dev/null || true' EXIT
           python copy_paper.py
 
       - name: Guardar estado en el repo
@@ -66,4 +66,3 @@ jobs:
             gh workflow run copy_paper.yml --ref ${{ github.ref_name }} && break
             sleep 10
           done
-
