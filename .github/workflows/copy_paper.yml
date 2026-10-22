@@ -66,3 +66,7 @@ jobs:
             gh workflow run copy_paper.yml --ref ${{ github.ref_name }} && break
             sleep 10
           done
+
+
+if __name__ == "__main__":
+    main()
