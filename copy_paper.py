@@ -1,4 +1,5 @@
 
+
 #!/usr/bin/env python3
 """
 copy_paper.py - Bot de PAPER TRADING que copia las wallets de traders de FOMO (Solana).
