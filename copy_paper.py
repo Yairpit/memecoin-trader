@@ -1,19 +1,20 @@
+
 #!/usr/bin/env python3
 """
 copy_paper.py - Bot de PAPER TRADING que copia las wallets de traders de FOMO (Solana).
-
+ 
 - NO usa claves privadas ni dinero real: solo simula.
 - Vigila las wallets, detecta compras/ventas y las replica con $100 simulados.
 - Mide cuanto peor es TU precio frente al del trader (el retraso), que es lo que
   decide si copiar vale la pena.
-
+ 
 Uso:
     pip install requests
     set HELIUS_API_KEY=tu_clave        (PowerShell: $env:HELIUS_API_KEY="tu_clave")
     python copy_paper.py               (corre el bot; Ctrl+C para parar, guarda estado)
     python copy_paper.py --resumen     (muestra resultados sin correr el bot)
     python copy_paper.py --reset       (borra estado y reinicia con el capital inicial)
-
+ 
 IMPORTANTE: el RPC publico de Solana limita mucho. Crea una clave gratis en helius.dev.
 """
 import os
@@ -23,12 +24,12 @@ import time
 import csv
 import requests
 from datetime import datetime, timezone
-
+ 
 # ======================= CONFIGURACION =======================
 HELIUS_API_KEY = os.getenv("HELIUS_API_KEY", "")
 RPC_URL = (f"https://mainnet.helius-rpc.com/?api-key={HELIUS_API_KEY}"
            if HELIUS_API_KEY else "https://api.mainnet-beta.solana.com")
-
+ 
 # Nombre -> wallet DUENA (no la cuenta del token). Cambia los nombres si los sabes.
 WALLETS = {
     "Rowdy":        "CzU8MaRcwvwUoNkwJFLbvtFWJugcEXAhDDQqNFE4ybb7",
@@ -37,7 +38,7 @@ WALLETS = {
     # Para agregar otro trader, copia su wallet de la columna "Account" (no "Token Account"):
     # "otro": "DIRECCION_AQUI",
 }
-
+ 
 CAPITAL_USD = 100.0          # capital simulado inicial
 # ESQUEMA POR CONVICCION: cuanto mas grande y mas progresiva es la compra del trader en un
 # token, mas pones tu. Formato: (compra acumulada del trader en ese token >= X USD, tu posicion
@@ -60,31 +61,31 @@ POLL_SECONDS = 12            # cada cuantos segundos revisa las wallets (ver not
 SUMMARY_EVERY = 50           # imprime resumen cada N ciclos
 STALE_SECONDS = 180          # no copia compras que el trader hizo hace mas de esto
 MAX_RUN_MINUTES = float(os.getenv("MAX_RUN_MINUTES", "0"))  # 0 = sin limite (GitHub Actions usa ~345)
-
+ 
 STATE_FILE = "copy_state.json"
 TRADES_CSV = "copy_trades.csv"
 # =============================================================
-
+ 
 WSOL = "So11111111111111111111111111111111111111112"
 USDC = "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
 USDT = "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB"
 QUOTES = {WSOL, USDC, USDT}
 SYSTEM_PROGRAM = "11111111111111111111111111111111"
-
+ 
 _sol_cache = {"t": 0, "p": 150.0}
 _dex_cache = {}
 STATS = {}          # actividad vista por wallet (para saber que la deteccion funciona)
 RPC_FAILS = [0]     # consultas RPC que fallaron del todo
-
-
+ 
+ 
 def now_iso():
     return datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S")
-
-
+ 
+ 
 def log(msg):
     print(f"[{now_iso()}] {msg}", flush=True)
-
-
+ 
+ 
 # ------------------------- RPC y precios -------------------------
 def rpc(method, params, retries=4):
     for i in range(retries):
@@ -104,8 +105,8 @@ def rpc(method, params, retries=4):
             time.sleep(1.0 * (i + 1))
     RPC_FAILS[0] += 1
     return None
-
-
+ 
+ 
 def sol_price():
     if time.time() - _sol_cache["t"] < 60:
         return _sol_cache["p"]
@@ -116,8 +117,8 @@ def sol_price():
     except Exception:
         pass  # usa el ultimo precio conocido
     return _sol_cache["p"]
-
-
+ 
+ 
 def dex_info(mint, ttl=5):
     """Precio actual (USD) y simbolo desde DexScreener, usando el par con mas liquidez."""
     c = _dex_cache.get(mint)
@@ -137,17 +138,19 @@ def dex_info(mint, ttl=5):
         info = None
     _dex_cache[mint] = (time.time(), info)
     return info
-
-
+ 
+ 
 # ------------------------- Parseo de swaps -------------------------
-def parse_swap(tx, wallet):
-    """Devuelve dict {side, mint, usd, tokens, price, frac_sold} o None si no es un swap claro."""
-    if not tx or not tx.get("meta") or tx["meta"].get("err"):
-        return None
+def parse_swap_ex(tx, wallet):
+    """Devuelve (swap, motivo). swap es None si no es un swap claro; motivo explica por que."""
+    if not tx or not tx.get("meta"):
+        return None, "no se pudo leer la transaccion"
     meta = tx["meta"]
+    if meta.get("err"):
+        return None, "transaccion fallida"
     keys = [k["pubkey"] if isinstance(k, dict) else k
             for k in tx["transaction"]["message"]["accountKeys"]]
-
+ 
     pre, post = {}, {}
     for b in meta.get("preTokenBalances") or []:
         if b.get("owner") == wallet:
@@ -156,7 +159,7 @@ def parse_swap(tx, wallet):
         if b.get("owner") == wallet:
             post[b["mint"]] = post.get(b["mint"], 0.0) + float(b["uiTokenAmount"].get("uiAmountString") or 0)
     deltas = {m: post.get(m, 0.0) - pre.get(m, 0.0) for m in set(pre) | set(post)}
-
+ 
     sol = 0.0
     if wallet in keys:
         i = keys.index(wallet)
@@ -165,29 +168,39 @@ def parse_swap(tx, wallet):
             sol += meta.get("fee", 0) / 1e9
     sol += deltas.get(WSOL, 0.0)
     quote_usd = sol * sol_price() + deltas.get(USDC, 0.0) + deltas.get(USDT, 0.0)
-
+ 
     others = {m: d for m, d in deltas.items() if m not in QUOTES and abs(d) > 0}
+    if not others:
+        return None, "ningun token propio cambio (transferencia o actividad sin swap)"
     if len(others) != 1:
-        return None                       # swap ambiguo (varios tokens): lo ignoramos
+        det = ", ".join(f"{m[:6]}..({d:+.4g})" for m, d in others.items())
+        return None, f"cambiaron varios tokens a la vez: {det}"
     mint, d = next(iter(others.items()))
-
+    if abs(quote_usd) < 1.0:
+        return None, f"{mint[:6]}.. {d:+.4g} sin movimiento relevante de SOL/USDC (${quote_usd:+,.2f})"
+ 
     if d > 0 and quote_usd < 0:
         usd = -quote_usd
         return {"side": "BUY", "mint": mint, "usd": usd, "tokens": d, "price": usd / d,
-                "frac_sold": 0.0}
+                "frac_sold": 0.0}, ""
     if d < 0 and quote_usd > 0:
         before = pre.get(mint, 0.0)
         frac = min(1.0, (-d) / before) if before > 0 else 1.0
         return {"side": "SELL", "mint": mint, "usd": quote_usd, "tokens": -d,
-                "price": quote_usd / (-d), "frac_sold": frac}
-    return None
-
-
+                "price": quote_usd / (-d), "frac_sold": frac}, ""
+    return None, (f"{mint[:6]}.. {d:+.4g} pero el SOL/USDC propio cambio ${quote_usd:+,.2f} "
+                  f"(no cuadra como compra/venta)")
+ 
+ 
+def parse_swap(tx, wallet):
+    return parse_swap_ex(tx, wallet)[0]
+ 
+ 
 # ------------------------- Estado y registro -------------------------
 def new_state():
     return {"cash": CAPITAL_USD, "positions": {}, "closed": [], "last_sig": {}, "wants": {}}
-
-
+ 
+ 
 def load_state():
     if os.path.exists(STATE_FILE):
         with open(STATE_FILE, "r", encoding="utf-8") as f:
@@ -195,15 +208,15 @@ def load_state():
         st.setdefault("wants", {})
         return st
     return new_state()
-
-
+ 
+ 
 def save_state(state):
     tmp = STATE_FILE + ".tmp"
     with open(tmp, "w", encoding="utf-8") as f:
         json.dump(state, f, indent=1)
     os.replace(tmp, STATE_FILE)
-
-
+ 
+ 
 def write_csv(row):
     new = not os.path.exists(TRADES_CSV)
     cols = ["time", "trader", "event", "mint", "symbol", "usd", "price",
@@ -213,8 +226,8 @@ def write_csv(row):
         if new:
             w.writeheader()
         w.writerow({k: row.get(k, "") for k in cols})
-
-
+ 
+ 
 # ------------------------- Logica de copia -------------------------
 def target_usd(cum):
     t = 0.0
@@ -222,12 +235,12 @@ def target_usd(cum):
         if cum >= thr:
             t = usd
     return t
-
-
+ 
+ 
 def used_by_trader(state, trader):
     return sum(p["cost_usd"] for p in state["positions"].values() if p["trader"] == trader)
-
-
+ 
+ 
 def try_fill(state, mint, quiet=True):
     """Intenta abrir/ampliar la posicion hasta el nivel que corresponde a lo que el trader lleva
     comprado. Devuelve 'ok' (compro), 'idle' (nada que comprar) o 'wait' (queda en espera)."""
@@ -277,8 +290,8 @@ def try_fill(state, mint, quiet=True):
                "symbol": symbol, "usd": round(size, 4), "price": entry,
                "trader_price": trader_avg, "slip_vs_trader_pct": round(slip, 2)})
     return "ok"
-
-
+ 
+ 
 def open_position(state, trader, sw):
     """Registra una compra grande del trader y trata de copiarla (esquema TIERS)."""
     mint = sw["mint"]
@@ -298,8 +311,8 @@ def open_position(state, trader, sw):
     if try_fill(state, mint, quiet=False) == "wait":
         log(f"EN ESPERA: {trader} lleva ${w['cum']:,.0f} en {mint[:6]}..; se completa cuando haya saldo "
             f"y el precio siga cerca de su entrada")
-
-
+ 
+ 
 def fill_waiting(state):
     """Completa compras en espera, empezando por las mas cercanas al precio de entrada del trader."""
     if state["cash"] < 1:
@@ -319,8 +332,8 @@ def fill_waiting(state):
         if state["cash"] < 1:
             break
         try_fill(state, mint)
-
-
+ 
+ 
 def close_position(state, mint, frac, reason, fallback_price=None):
     pos = state["positions"].get(mint)
     if not pos:
@@ -350,8 +363,8 @@ def close_position(state, mint, frac, reason, fallback_price=None):
     else:
         pos["tokens"] -= tok
         pos["cost_usd"] -= cost
-
-
+ 
+ 
 def handle_swap(state, trader, sw):
     if sw["side"] == "BUY":
         open_position(state, trader, sw)
@@ -368,8 +381,8 @@ def handle_swap(state, trader, sw):
     if pos and pos["trader"] == trader:
         close_position(state, mint, sw["frac_sold"], "SELL", fallback_price=sw["price"])
         fill_waiting(state)                              # saldo liberado: entra a lo que quedo en espera
-
-
+ 
+ 
 def check_risk(state):
     if STOP_LOSS_PCT is None and MAX_HOLD_HOURS is None:
         return
@@ -382,8 +395,8 @@ def check_risk(state):
                 continue
         if MAX_HOLD_HOURS is not None and time.time() - pos["opened"] > MAX_HOLD_HOURS * 3600:
             close_position(state, mint, 1.0, "TIMEOUT")
-
-
+ 
+ 
 # ------------------------- Resumen -------------------------
 def summary(state):
     value = 0.0
@@ -427,8 +440,8 @@ def summary(state):
         for t, d in by.items():
             print(f"   {t:<10} {d['n']} ops, {d['w']} ganadoras, PnL ${d['pnl']:+.2f}")
     print("=" * 60 + "\n", flush=True)
-
-
+ 
+ 
 # ------------------------- Bucle principal -------------------------
 def validate_wallets():
     ok = {}
@@ -442,8 +455,8 @@ def validate_wallets():
             continue
         ok[name] = w
     return ok
-
-
+ 
+ 
 def poll_wallet(state, name, w):
     params = {"limit": 25, "commitment": "confirmed"}
     last = state["last_sig"].get(w)
@@ -461,7 +474,11 @@ def poll_wallet(state, name, w):
         tx = rpc("getTransaction", [s["signature"], {"encoding": "jsonParsed",
                                                       "maxSupportedTransactionVersion": 0,
                                                       "commitment": "confirmed"}])
-        sw = parse_swap(tx, w)
+        sw, why = parse_swap_ex(tx, w)
+        if not sw:
+            if not why.startswith("ningun token"):
+                log(f"SKIP {name} {s['signature'][:8]}..: {why}")
+            continue
         if sw:
             st["swaps"] += 1
             st["last"] = now_iso()
@@ -478,8 +495,33 @@ def poll_wallet(state, name, w):
                 log(f"Compra de {name} de hace {age:.0f}s: demasiado vieja, no se copia")
                 continue
             handle_swap(state, name, sw)
-
-
+ 
+ 
+def self_test(wallets):
+    """Al arrancar, revisa las ultimas transacciones de cada wallet y dice si las entiende. No opera."""
+    log("PRUEBA de deteccion: reviso las ultimas transacciones de cada wallet (no opera)")
+    for name, w in wallets.items():
+        sigs = rpc("getSignaturesForAddress", [w, {"limit": 8, "commitment": "confirmed"}])
+        if not sigs:
+            log(f"PRUEBA {name}: no pude leer transacciones (fallo el RPC o la wallet no tiene actividad)")
+            continue
+        ok = 0
+        for sg in sigs:
+            if sg.get("err"):
+                continue
+            tx = rpc("getTransaction", [sg["signature"], {"encoding": "jsonParsed",
+                                                           "maxSupportedTransactionVersion": 0,
+                                                           "commitment": "confirmed"}])
+            age = (time.time() - (tx.get("blockTime") or time.time())) / 60 if tx else 0
+            sw, why = parse_swap_ex(tx, w)
+            if sw:
+                ok += 1
+                log(f"PRUEBA {name} hace {age:.0f} min: {sw['side']} {sw['mint'][:6]}.. ${sw['usd']:,.0f}")
+            else:
+                log(f"PRUEBA {name} hace {age:.0f} min: no es un swap claro -> {why}")
+        log(f"PRUEBA {name}: {ok} swaps reconocidos de {len(sigs)} transacciones")
+ 
+ 
 def main():
     if "--reset" in sys.argv:
         for f in (STATE_FILE, TRADES_CSV):
@@ -491,7 +533,7 @@ def main():
     if "--resumen" in sys.argv:
         summary(state)
         return
-
+ 
     if not HELIUS_API_KEY:
         log("AVISO: sin HELIUS_API_KEY usas el RPC publico, que suele dar errores 429.")
     wallets = validate_wallets()
@@ -501,7 +543,8 @@ def main():
             state["last_sig"][w] = sigs[0]["signature"] if sigs else None
     save_state(state)
     log(f"Vigilando {len(wallets)} wallets. Capital simulado ${state['cash']:.2f}. Ctrl+C para parar.")
-
+    self_test(wallets)
+ 
     cycle = 0
     last_fill = 0.0
     start = time.time()
@@ -529,11 +572,7 @@ def main():
     finally:
         save_state(state)
         summary(state)
-
-
-if __name__ == "__main__":
-    main()
-
-
+ 
+ 
 if __name__ == "__main__":
     main()
