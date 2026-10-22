@@ -22,6 +22,7 @@ import sys
 import json
 import time
 import csv
+import re
 import requests
 from datetime import datetime, timezone
 
@@ -81,6 +82,7 @@ _dex_cache = {}
 STATS = {}          # actividad vista por wallet (para saber que la deteccion funciona)
 RPC_FAILS = [0]     # consultas RPC que fallaron del todo
 LAST_ERR = [""]      # ultimo error del RPC (para diagnosticar)
+TX_VERSION = [1]    # maxSupportedTransactionVersion: las transacciones nuevas son version 1; sube sola si el RPC lo pide
 
 
 def now_iso():
@@ -104,7 +106,13 @@ def rpc(method, params, retries=4):
             r.raise_for_status()
             j = r.json()
             if "error" in j:
-                LAST_ERR[0] = str(j["error"])[:150]
+                msg = str(j["error"])
+                LAST_ERR[0] = msg[:150]
+                if isinstance(j["error"], dict) and j["error"].get("code") == -32015:
+                    m = re.search(r"version \((\d+)\)", msg)
+                    if m:
+                        TX_VERSION[0] = max(TX_VERSION[0], int(m.group(1)))
+                    break                      # reintentar igual no sirve: se reintenta con otra version
                 time.sleep(1.0 * (i + 1))
                 continue
             return j.get("result")
@@ -152,18 +160,29 @@ def get_tx(sig, tries=4):
     """Lee una transaccion. Las recien confirmadas a veces tardan 1-2 s en estar disponibles."""
     for _ in range(tries):
         fails = RPC_FAILS[0]
+        ver = TX_VERSION[0]
         tx = rpc("getTransaction", [sig, {"encoding": "jsonParsed",
-                                          "maxSupportedTransactionVersion": 0,
+                                          "maxSupportedTransactionVersion": ver,
                                           "commitment": "confirmed"}])
         if tx:
             return tx
-        if RPC_FAILS[0] != fails:          # error real del RPC (no solo "aun no disponible")
+        if RPC_FAILS[0] != fails:              # error real del RPC (no solo "aun no disponible")
+            if TX_VERSION[0] != ver:           # el RPC pidio una version mayor: reintenta con ella
+                continue
             return None
         time.sleep(1.5)
     return None
 
 
 # ------------------------- Parseo de swaps -------------------------
+def describe_tx(tx, wallet, top=4):
+    try:
+        return _describe_tx(tx, wallet, top)
+    except Exception as e:
+        return f"(no pude resumir la transaccion: {repr(e)[:100]}; claves del mensaje: " \
+               f"{list((tx.get('transaction') or {}).get('message', {}).keys())})"
+
+
 def tx_quote_movement(tx):
     """Mayor movimiento de SOL/USDC/USDT entre TODAS las cuentas de la transaccion, en USD.
     Sirve para estimar el monto cuando el pago no sale de la wallet del trader (ej. FOMO)."""
@@ -184,7 +203,7 @@ def tx_quote_movement(tx):
     return best
 
 
-def describe_tx(tx, wallet, top=4):
+def _describe_tx(tx, wallet, top=4):
     """Resumen corto de los mayores cambios de SOL y de tokens (para diagnosticar)."""
     meta = tx["meta"]
     keys = [k["pubkey"] if isinstance(k, dict) else k
@@ -206,7 +225,7 @@ def describe_tx(tx, wallet, top=4):
     return f"SOL[{solt}] TOKENS[{tokt}]"
 
 
-def parse_swap_ex(tx, wallet):
+def _parse_swap_ex(tx, wallet):
     """Devuelve (swap, motivo). swap es None si no es un swap claro; motivo explica por que."""
     if not tx or not tx.get("meta"):
         return None, f"no se pudo leer la transaccion (ultimo error RPC: {LAST_ERR[0] or 'ninguno; aun no disponible'})"
@@ -260,6 +279,13 @@ def parse_swap_ex(tx, wallet):
                 "price": quote_usd / (-d), "frac_sold": frac, "est": est}, ""
     return None, (f"{mint[:6]}.. {d:+.4g} pero el SOL/USDC propio cambio ${quote_usd:+,.2f} "
                   f"(no cuadra como compra/venta)")
+
+
+def parse_swap_ex(tx, wallet):
+    try:
+        return _parse_swap_ex(tx, wallet)
+    except Exception as e:                     # formato de transaccion inesperado
+        return None, f"formato inesperado de la transaccion: {repr(e)[:120]}"
 
 
 def parse_swap(tx, wallet):
@@ -676,6 +702,9 @@ def main():
         save_state(state)
         summary(state)
 
+
+if __name__ == "__main__":
+    main()
 
 if __name__ == "__main__":
     main()
