@@ -73,6 +73,8 @@ SYSTEM_PROGRAM = "11111111111111111111111111111111"
 
 _sol_cache = {"t": 0, "p": 150.0}
 _dex_cache = {}
+STATS = {}          # actividad vista por wallet (para saber que la deteccion funciona)
+RPC_FAILS = [0]     # consultas RPC que fallaron del todo
 
 
 def now_iso():
@@ -100,6 +102,7 @@ def rpc(method, params, retries=4):
             return j.get("result")
         except Exception:
             time.sleep(1.0 * (i + 1))
+    RPC_FAILS[0] += 1
     return None
 
 
@@ -407,6 +410,12 @@ def summary(state):
     if waiting:
         print("En espera (sin saldo o precio lejos):")
         print("\n".join(waiting))
+    if STATS:
+        print("Actividad vista en este turno:")
+        for n, a in STATS.items():
+            print(f"   {n:<13} {a['txs']} tx, {a['swaps']} swaps, {a['buys']} compras "
+                  f"({a['big_buys']} de >=${MIN_TRADER_BUY_USD:,.0f}) | ultimo swap: {a['last'] or '-'}")
+        print(f"   Consultas RPC fallidas: {RPC_FAILS[0]}")
     by = {}
     for c in state["closed"]:
         d = by.setdefault(c["trader"], {"n": 0, "w": 0, "pnl": 0.0})
@@ -444,14 +453,26 @@ def poll_wallet(state, name, w):
     if not sigs:
         return
     state["last_sig"][w] = sigs[0]["signature"]
+    st = STATS.setdefault(name, {"txs": 0, "swaps": 0, "buys": 0, "big_buys": 0, "last": ""})
     for s in reversed(sigs):               # del mas viejo al mas nuevo
         if s.get("err"):
             continue
+        st["txs"] += 1
         tx = rpc("getTransaction", [s["signature"], {"encoding": "jsonParsed",
                                                       "maxSupportedTransactionVersion": 0,
                                                       "commitment": "confirmed"}])
         sw = parse_swap(tx, w)
         if sw:
+            st["swaps"] += 1
+            st["last"] = now_iso()
+            small = ""
+            if sw["side"] == "BUY":
+                st["buys"] += 1
+                if sw["usd"] >= MIN_TRADER_BUY_USD:
+                    st["big_buys"] += 1
+                else:
+                    small = " (chica: no cuenta)"
+            log(f"VISTO {name} {sw['side']} {sw['mint'][:6]}.. ${sw['usd']:,.0f}{small}")
             age = time.time() - (tx.get("blockTime") or time.time())
             if sw["side"] == "BUY" and age > STALE_SECONDS:
                 log(f"Compra de {name} de hace {age:.0f}s: demasiado vieja, no se copia")
@@ -508,6 +529,10 @@ def main():
     finally:
         save_state(state)
         summary(state)
+
+
+if __name__ == "__main__":
+    main()
 
 
 if __name__ == "__main__":
