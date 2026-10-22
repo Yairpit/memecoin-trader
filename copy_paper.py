@@ -1,5 +1,4 @@
 
-
 #!/usr/bin/env python3
 """
 copy_paper.py - Bot de PAPER TRADING que copia las wallets de traders de FOMO (Solana).
@@ -141,7 +140,61 @@ def dex_info(mint, ttl=5):
     return info
  
  
+def get_tx(sig, tries=4):
+    """Lee una transaccion. Las recien confirmadas a veces tardan 1-2 s en estar disponibles."""
+    for _ in range(tries):
+        tx = rpc("getTransaction", [sig, {"encoding": "jsonParsed",
+                                          "maxSupportedTransactionVersion": 0,
+                                          "commitment": "confirmed"}])
+        if tx:
+            return tx
+        time.sleep(1.5)
+    return None
+ 
+ 
 # ------------------------- Parseo de swaps -------------------------
+def tx_quote_movement(tx):
+    """Mayor movimiento de SOL/USDC/USDT entre TODAS las cuentas de la transaccion, en USD.
+    Sirve para estimar el monto cuando el pago no sale de la wallet del trader (ej. FOMO)."""
+    meta = tx["meta"]
+    px = sol_price()
+    best = 0.0
+    for a, b in zip(meta.get("preBalances") or [], meta.get("postBalances") or []):
+        best = max(best, abs(b - a) / 1e9 * px)
+    bal = {}
+    for k, lst in (("pre", meta.get("preTokenBalances") or []), ("post", meta.get("postTokenBalances") or [])):
+        for b in lst:
+            if b.get("mint") in QUOTES:
+                bal.setdefault((b.get("accountIndex"), b["mint"]), {})[k] = \
+                    float(b["uiTokenAmount"].get("uiAmountString") or 0)
+    for (_, mint), v in bal.items():
+        d = abs(v.get("post", 0.0) - v.get("pre", 0.0))
+        best = max(best, d * (px if mint == WSOL else 1.0))
+    return best
+ 
+ 
+def describe_tx(tx, wallet, top=4):
+    """Resumen corto de los mayores cambios de SOL y de tokens (para diagnosticar)."""
+    meta = tx["meta"]
+    keys = [k["pubkey"] if isinstance(k, dict) else k
+            for k in tx["transaction"]["message"]["accountKeys"]]
+    sol = []
+    for i, (a, b) in enumerate(zip(meta.get("preBalances") or [], meta.get("postBalances") or [])):
+        d = (b - a) / 1e9
+        if abs(d) >= 0.001 and i < len(keys):
+            sol.append((abs(d), f"{keys[i][:5]}..{'*TU*' if keys[i] == wallet else ''}{d:+.3f}"))
+    tok = {}
+    for lst, sg in ((meta.get("preTokenBalances") or [], -1), (meta.get("postTokenBalances") or [], 1)):
+        for b in lst:
+            k = (b.get("owner") or "?", b["mint"])
+            tok[k] = tok.get(k, 0.0) + sg * float(b["uiTokenAmount"].get("uiAmountString") or 0)
+    toks = sorted(((abs(d), f"{o[:5]}..{'*TU*' if o == wallet else ''}/{m[:5]}.. {d:+.4g}")
+                   for (o, m), d in tok.items() if abs(d) > 0), reverse=True)
+    solt = ", ".join(t for _, t in sorted(sol, reverse=True)[:top]) or "-"
+    tokt = ", ".join(t for _, t in toks[:top]) or "-"
+    return f"SOL[{solt}] TOKENS[{tokt}]"
+ 
+ 
 def parse_swap_ex(tx, wallet):
     """Devuelve (swap, motivo). swap es None si no es un swap claro; motivo explica por que."""
     if not tx or not tx.get("meta"):
@@ -177,18 +230,23 @@ def parse_swap_ex(tx, wallet):
         det = ", ".join(f"{m[:6]}..({d:+.4g})" for m, d in others.items())
         return None, f"cambiaron varios tokens a la vez: {det}"
     mint, d = next(iter(others.items()))
-    if abs(quote_usd) < 1.0:
-        return None, f"{mint[:6]}.. {d:+.4g} sin movimiento relevante de SOL/USDC (${quote_usd:+,.2f})"
+    est = False
+    if abs(quote_usd) < 1.0:                  # el pago no sale de la wallet del trader (ej. FOMO)
+        mov = tx_quote_movement(tx)
+        if mov < 1.0:
+            return None, f"{mint[:6]}.. {d:+.4g} sin movimiento relevante de SOL/USDC en toda la transaccion"
+        quote_usd = -mov if d > 0 else mov
+        est = True
  
     if d > 0 and quote_usd < 0:
         usd = -quote_usd
         return {"side": "BUY", "mint": mint, "usd": usd, "tokens": d, "price": usd / d,
-                "frac_sold": 0.0}, ""
+                "frac_sold": 0.0, "est": est}, ""
     if d < 0 and quote_usd > 0:
         before = pre.get(mint, 0.0)
         frac = min(1.0, (-d) / before) if before > 0 else 1.0
         return {"side": "SELL", "mint": mint, "usd": quote_usd, "tokens": -d,
-                "price": quote_usd / (-d), "frac_sold": frac}, ""
+                "price": quote_usd / (-d), "frac_sold": frac, "est": est}, ""
     return None, (f"{mint[:6]}.. {d:+.4g} pero el SOL/USDC propio cambio ${quote_usd:+,.2f} "
                   f"(no cuadra como compra/venta)")
  
@@ -472,9 +530,7 @@ def poll_wallet(state, name, w):
         if s.get("err"):
             continue
         st["txs"] += 1
-        tx = rpc("getTransaction", [s["signature"], {"encoding": "jsonParsed",
-                                                      "maxSupportedTransactionVersion": 0,
-                                                      "commitment": "confirmed"}])
+        tx = get_tx(s["signature"])
         sw, why = parse_swap_ex(tx, w)
         if not sw:
             if not why.startswith("ningun token"):
@@ -490,7 +546,8 @@ def poll_wallet(state, name, w):
                     st["big_buys"] += 1
                 else:
                     small = " (chica: no cuenta)"
-            log(f"VISTO {name} {sw['side']} {sw['mint'][:6]}.. ${sw['usd']:,.0f}{small}")
+            est = " (monto estimado)" if sw.get("est") else ""
+            log(f"VISTO {name} {sw['side']} {sw['mint'][:6]}.. ${sw['usd']:,.0f}{est}{small}")
             age = time.time() - (tx.get("blockTime") or time.time())
             if sw["side"] == "BUY" and age > STALE_SECONDS:
                 log(f"Compra de {name} de hace {age:.0f}s: demasiado vieja, no se copia")
@@ -507,19 +564,23 @@ def self_test(wallets):
             log(f"PRUEBA {name}: no pude leer transacciones (fallo el RPC o la wallet no tiene actividad)")
             continue
         ok = 0
+        shown = 0
         for sg in sigs:
             if sg.get("err"):
                 continue
-            tx = rpc("getTransaction", [sg["signature"], {"encoding": "jsonParsed",
-                                                           "maxSupportedTransactionVersion": 0,
-                                                           "commitment": "confirmed"}])
+            tx = get_tx(sg["signature"])
             age = (time.time() - (tx.get("blockTime") or time.time())) / 60 if tx else 0
             sw, why = parse_swap_ex(tx, w)
             if sw:
                 ok += 1
-                log(f"PRUEBA {name} hace {age:.0f} min: {sw['side']} {sw['mint'][:6]}.. ${sw['usd']:,.0f}")
+                est = " (monto estimado)" if sw.get("est") else ""
+                log(f"PRUEBA {name} hace {age:.0f} min: {sw['side']} {sw['mint'][:6]}.. ${sw['usd']:,.0f}{est}")
             else:
                 log(f"PRUEBA {name} hace {age:.0f} min: no es un swap claro -> {why}")
+                if tx and shown < 2:
+                    shown += 1
+                    log(f"   firma completa: {sg['signature']}")
+                    log(f"   {describe_tx(tx, w)}")
         log(f"PRUEBA {name}: {ok} swaps reconocidos de {len(sigs)} transacciones")
  
  
@@ -577,3 +638,4 @@ def main():
  
 if __name__ == "__main__":
     main()
+ 
