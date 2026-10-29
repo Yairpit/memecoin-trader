@@ -1,5 +1,5 @@
 {
- "cash": 32.748497811270354,
+ "cash": 33.27265844153507,
  "positions": {
   "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump": {
    "trader": "trader3",
@@ -22,8 +22,8 @@
   "J8PSdNP3QewKq2Z1JJJFDMaqF7KcaiJhR7gbr5KZpump": {
    "trader": "trader3",
    "symbol": "TripleT",
-   "tokens": 428.32038656910663,
-   "cost_usd": 2.430000000000181,
+   "tokens": 278.4082512699307,
+   "cost_usd": 1.5795000000001822,
    "entry_price": 0.00561659,
    "trader_price": 0.005540084942713204,
    "opened": 1792848301.7165096
@@ -192,12 +192,22 @@
    "proceeds": 0.3934695637904101,
    "pnl": -0.006530436209488344,
    "reason": "SELL"
+  },
+  {
+   "time": "2026-10-29 19:57:18",
+   "trader": "trader3",
+   "symbol": "TripleT",
+   "mint": "J8PSdNP3QewKq2Z1JJJFDMaqF7KcaiJhR7gbr5KZpump",
+   "cost": 0.8504999999999987,
+   "proceeds": 0.5241606302647149,
+   "pnl": -0.32633936973528377,
+   "reason": "SELL"
   }
  ],
  "last_sig": {
-  "CzU8MaRcwvwUoNkwJFLbvtFWJugcEXAhDDQqNFE4ybb7": "3yNTsfJh272ZK1bN7EyaYsUsWE4YEeJqEgwJRxS1zHP42Nn3rMnRjprXB5KuqzMX7kK3kEXxfcmLWhcGi3yTaYym",
+  "CzU8MaRcwvwUoNkwJFLbvtFWJugcEXAhDDQqNFE4ybb7": "2MD7S8ifB16fs7eDtkmygLQmcU3TaqkAJuzus7NwXL4uD3aDdotHQBd8snJa8KDvaqAz3RP6phvF5QteGb76QJXp",
   "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "2UE7jQr6NctWqABQtVLTR8joWoQzjHnXGKxvQdW3UUzhrMaPqXUaoMMBHDzRV9ek312SmF1mzYWLVgmsBg39SEpZ",
-  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "4xARaB6T4igT7DpBAChRybxxmt9ErzZhGCjghrEheRAGuc3vjJ1pntFEPPMVedFgXr3z8whiA9ra3RQUEh8EigZq"
+  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "4KujHJCz2HSXfXBTARGejSgHHhUhu44xwD23FWWpR1BR2Ht73fQerAeRZ3R8Ts2SJcoiyibDVKCyCdWhuhWC46Jv"
  },
  "wants": {
   "4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz": {
