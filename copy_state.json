@@ -1,5 +1,5 @@
 {
- "cash": 34.97743949971373,
+ "cash": 35.90436082300261,
  "positions": {
   "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump": {
    "trader": "trader3",
@@ -18,15 +18,6 @@
    "entry_price": 0.002393969696969697,
    "trader_price": 0.0024994352962087176,
    "opened": 1792846780.1379726
-  },
-  "J8PSdNP3QewKq2Z1JJJFDMaqF7KcaiJhR7gbr5KZpump": {
-   "trader": "trader3",
-   "symbol": "TripleT",
-   "tokens": 278.4082512699307,
-   "cost_usd": 1.5795000000001822,
-   "entry_price": 0.00561659,
-   "trader_price": 0.005540084942713204,
-   "opened": 1792848301.7165096
   },
   "6UtY9iTZMQQ5QZVrbzFnNaJntV7oySm9k97mvwnuZcxr": {
    "trader": "pointfarmcap",
@@ -213,12 +204,57 @@
    "proceeds": 0.2904457749213419,
    "pnl": -0.06955422507861969,
    "reason": "SELL"
+  },
+  {
+   "time": "2026-11-01 18:30:23",
+   "trader": "trader3",
+   "symbol": "TripleT",
+   "mint": "J8PSdNP3QewKq2Z1JJJFDMaqF7KcaiJhR7gbr5KZpump",
+   "cost": 0.39487499999995546,
+   "proceeds": 0.23173033082216754,
+   "pnl": -0.16314466917778792,
+   "reason": "SELL"
+  },
+  {
+   "time": "2026-11-01 18:30:23",
+   "trader": "trader3",
+   "symbol": "TripleT",
+   "mint": "J8PSdNP3QewKq2Z1JJJFDMaqF7KcaiJhR7gbr5KZpump",
+   "cost": 0.3948750000001356,
+   "proceeds": 0.2317303308222732,
+   "pnl": -0.16314466917786238,
+   "reason": "SELL"
+  },
+  {
+   "time": "2026-11-01 18:30:47",
+   "trader": "trader3",
+   "symbol": "TripleT",
+   "mint": "J8PSdNP3QewKq2Z1JJJFDMaqF7KcaiJhR7gbr5KZpump",
+   "cost": 0.7897500000000912,
+   "proceeds": 0.4634606616444408,
+   "pnl": -0.32628933835565044,
+   "reason": "SELL"
   }
  ],
  "last_sig": {
   "CzU8MaRcwvwUoNkwJFLbvtFWJugcEXAhDDQqNFE4ybb7": "3dg2v76NejBrFL2BTAhzChJZaopqKUugz7XwgRDFjGRK4oaSeb5oyzbf92cfspqsCVJuEsmhyhJBqJKQtnWygFMP",
-  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "2CYycFhxMnbi2ZW8dm276m4jU6eofn26ZVeuV88fChfX1LiXMhmY7oPPFMTWzo4J3R7ev6nfvD19D6o9beVTPpjJ",
-  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "3swpNmpAcPSfAAVMjxru7nv8EfBMe4AnyMGqKf85rRMEaRN12bJ6sFJpRkktNsCuGQ5QxK6ETyweyp9xL8nkLp73"
+  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "4SeTPvj268fk6Lu8WVoPi7LLvre47dzWnM6bAVtA3DsRucxQZQ6TcmCoSxniqaZ3YVrdhPPPzT4w9C33syA7wC5g",
+  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "5f9EBDzFF4ZLRuwNPX27A9dCsEY32jP4i5WRbX3Y3mBXuY4hif8pw1eBYxatF1bKThU7dUb7BkU4aZymQykWpL4a"
  },
- "wants": {}
+ "wants": {
+  "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx": {
+   "trader": "pointfarmcap",
+   "cum": 1000.0,
+   "usd_sum": 1000.0,
+   "tok_sum": 8137.573503434658,
+   "since": 1793556283.8218424
+  },
+  "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump": {
+   "trader": "trader3",
+   "cum": 13000.000000000004,
+   "usd_sum": 13000.000000000004,
+   "tok_sum": 1649703.8120360002,
+   "since": 1793557908.7784648
+  }
+ }
 }
