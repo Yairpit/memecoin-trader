@@ -1,5 +1,5 @@
 {
- "cash": 31.904360823002612,
+ "cash": 31.13186521123486,
  "positions": {
   "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump": {
    "trader": "trader3",
@@ -76,11 +76,11 @@
   "wDSAqt4tEZpDAwB9XY6ejkZvMFuT1zUMjUh67txeYhf": {
    "trader": "trader3",
    "symbol": "HEDGE",
-   "tokens": 19349.069925388812,
+   "tokens": 32280.942016580662,
    "cost_usd": 4.0,
-   "entry_price": 0.000204661,
-   "trader_price": 0.00021656411020590311,
-   "opened": 1793653395.1307638
+   "entry_price": 0.000122673,
+   "trader_price": 0.00012922554455832303,
+   "opened": 1793660576.0283406
   }
  },
  "closed": [
@@ -243,20 +243,37 @@
    "proceeds": 0.4634606616444408,
    "pnl": -0.32628933835565044,
    "reason": "SELL"
+  },
+  {
+   "time": "2026-11-02 23:00:25",
+   "trader": "trader3",
+   "symbol": "HEDGE",
+   "mint": "wDSAqt4tEZpDAwB9XY6ejkZvMFuT1zUMjUh67txeYhf",
+   "cost": 4.0,
+   "proceeds": 3.2275043882322474,
+   "pnl": -0.7724956117677526,
+   "reason": "SELL"
   }
  ],
  "last_sig": {
-  "CzU8MaRcwvwUoNkwJFLbvtFWJugcEXAhDDQqNFE4ybb7": "mx3idqXDQ5Pevd1iJBgMtaUF8PTLsJsjtBFkBo5TiLvPrg1uumFW66xn1SasrhMmZFwnQX7kxAxvshyN1jnqyPS",
-  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "2fGCJ9Uet1Aagxuja5NYTYLzDTAa7K1Yr6JyeoQPSngFtYPyyRnenvynEGeNFGX771R9bXRYP8wAVLz775WXA8jY",
-  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "4faSMfFPLCakX7nKzXe8vA2FpgsTNjdBexkF8Z3h9sXz7naxjhkFx5azUxBkt2f5hpzwG7R4mpwq5zSJRtpvnkGe"
+  "CzU8MaRcwvwUoNkwJFLbvtFWJugcEXAhDDQqNFE4ybb7": "tZNDHFKku9sAPHYMoemSmhQa62zGWsJJ2hLRcuy9g5tCWmEXYNPp7m8Urp1Nqqvc9G79VQZ7VovcCUdoVqYZbnZ",
+  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "4nUk5mekdybQbGyVTGyk5eyh35aPfpGUhj9jLZJFUdpdusguSTyTZxbJC8bbtamrQ4gxjndhHPnw4idt6Mo8vMnB",
+  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "3rk7HRY6MgKTw4QsfoDUhvPpjZyqcZQjPDLJ3FGrihiCWeeDsWgHAYCveF83jxWPhd62uWc5c4MPCqcrMqFKzh3t"
  },
  "wants": {
   "wDSAqt4tEZpDAwB9XY6ejkZvMFuT1zUMjUh67txeYhf": {
    "trader": "trader3",
-   "cum": 3000.0,
-   "usd_sum": 3000.0,
-   "tok_sum": 13852710.853833,
-   "since": 1793653395.0446594
+   "cum": 2000.0,
+   "usd_sum": 2000.0,
+   "tok_sum": 15476816.188593,
+   "since": 1793660575.8839035
+  },
+  "6kKETm8xPeZ2z1DBYjXmxMTFAJudvGHJvRHu5Wt8uGtf": {
+   "trader": "trader3",
+   "cum": 4000.0,
+   "usd_sum": 4000.0,
+   "tok_sum": 9521611.094310451,
+   "since": 1793661483.1146507
   }
  }
 }
