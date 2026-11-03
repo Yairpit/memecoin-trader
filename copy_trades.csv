@@ -44,3 +44,4 @@ time,trader,event,mint,symbol,usd,price,trader_price,slip_vs_trader_pct,pnl_usd,
 2026-11-03 18:03:54,pointfarmcap,BUY,ACv7iJ7xVfohvfXp3dt7AfAPcekL2dHsYCbJw8Vp1osr,RETARD,4.0,0.000146672,0.00016769832765847845,-12.54,,
 2026-11-03 18:28:43,pointfarmcap,SELL,6UtY9iTZMQQ5QZVrbzFnNaJntV7oySm9k97mvwnuZcxr,NEARKAT,0.3483,0.00166937,,,-0.1654,-32.2
 2026-11-03 19:01:18,pointfarmcap,SELL,6UtY9iTZMQQ5QZVrbzFnNaJntV7oySm9k97mvwnuZcxr,NEARKAT,0.3603,0.00165773,,,-0.1749,-32.68
+2026-11-03 19:21:18,pointfarmcap,SELL,6UtY9iTZMQQ5QZVrbzFnNaJntV7oySm9k97mvwnuZcxr,NEARKAT,0.3545,0.00158207,,,-0.1972,-35.75
