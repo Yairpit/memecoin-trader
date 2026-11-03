@@ -1,5 +1,5 @@
 {
- "cash": 30.77119343504939,
+ "cash": 29.08400881583941,
  "positions": {
   "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump": {
    "trader": "trader3",
@@ -73,14 +73,14 @@
    "trader_price": 0.0002798130184438693,
    "opened": 1793286907.0126777
   },
-  "6kKETm8xPeZ2z1DBYjXmxMTFAJudvGHJvRHu5Wt8uGtf": {
+  "wDSAqt4tEZpDAwB9XY6ejkZvMFuT1zUMjUh67txeYhf": {
    "trader": "trader3",
-   "symbol": "COLLECTOR",
-   "tokens": 11317.810403811472,
+   "symbol": "HEDGE",
+   "tokens": 42756.45233735272,
    "cost_usd": 4.0,
-   "entry_price": 0.000349891,
-   "trader_price": 0.00042009697312571,
-   "opened": 1793674493.380018
+   "entry_price": 9.261760000000001e-05,
+   "trader_price": 9.794843915866083e-05,
+   "opened": 1793717614.109044
   }
  },
  "closed": [
@@ -263,12 +263,30 @@
    "proceeds": 3.639328223814531,
    "pnl": -0.3606717761854692,
    "reason": "SELL"
+  },
+  {
+   "time": "2026-11-03 14:52:06",
+   "trader": "trader3",
+   "symbol": "COLLECTOR",
+   "mint": "6kKETm8xPeZ2z1DBYjXmxMTFAJudvGHJvRHu5Wt8uGtf",
+   "cost": 4.0,
+   "proceeds": 2.3128153807900174,
+   "pnl": -1.6871846192099826,
+   "reason": "SELL"
   }
  ],
  "last_sig": {
-  "CzU8MaRcwvwUoNkwJFLbvtFWJugcEXAhDDQqNFE4ybb7": "4fhAVHi1GTenRjweFzUtdtpcSZTgmfmY4Dtin8hyaxV4M7Zd7UdC1meei65vHZXSBGWTnDMjM3TE8x8gpQrhDBVF",
-  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "HwzEhALLdf6JrBpT7Ky7z2BRaLMN1V78rQRp4Manwe26UKkMvf3o3DeGgzZ6zaLu3gLwtPMrYdbieyoDM81gfrX",
-  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "4BYT3NKciR7Hb9WvGEhkQKPTnPhxDiVKgRR1MebukUe9dCUvzYBmA46LEw6CSiy9mjQXfLZsCtWGSGdJbzWcEWBV"
+  "CzU8MaRcwvwUoNkwJFLbvtFWJugcEXAhDDQqNFE4ybb7": "5A25xyiwR8G1hemAb9eR5apBXqvNtiqiTUDnyTcD3TZEbRq9RrSwSFE8Q9sSV35Z3ZUf4eTE8EfwisCAuwDw4xBq",
+  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "5cyfSVN38DAGaV9zUmEGn3Tbwo53epNLhJ2Ji1gKfiYKs9AfMDoPEGoBSvQTbrur434snGrBRvunwNjTxsvpcJ1N",
+  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "5Z1tv1Fv6ebFawG1GkV3jyVXKHQiFuYZi3uz6DjkZjD75cyJUXhnmHaQA7yoC7bGT7TkvAnLrTwhDyudZpV9FQpx"
  },
- "wants": {}
+ "wants": {
+  "wDSAqt4tEZpDAwB9XY6ejkZvMFuT1zUMjUh67txeYhf": {
+   "trader": "trader3",
+   "cum": 2500.0,
+   "usd_sum": 2500.0,
+   "tok_sum": 25523632.856981,
+   "since": 1793717614.0435953
+  }
+ }
 }
