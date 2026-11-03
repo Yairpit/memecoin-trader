@@ -1,5 +1,5 @@
 {
- "cash": 31.13186521123486,
+ "cash": 30.77119343504939,
  "positions": {
   "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump": {
    "trader": "trader3",
@@ -73,14 +73,14 @@
    "trader_price": 0.0002798130184438693,
    "opened": 1793286907.0126777
   },
-  "wDSAqt4tEZpDAwB9XY6ejkZvMFuT1zUMjUh67txeYhf": {
+  "6kKETm8xPeZ2z1DBYjXmxMTFAJudvGHJvRHu5Wt8uGtf": {
    "trader": "trader3",
-   "symbol": "HEDGE",
-   "tokens": 32280.942016580662,
+   "symbol": "COLLECTOR",
+   "tokens": 11317.810403811472,
    "cost_usd": 4.0,
-   "entry_price": 0.000122673,
-   "trader_price": 0.00012922554455832303,
-   "opened": 1793660576.0283406
+   "entry_price": 0.000349891,
+   "trader_price": 0.00042009697312571,
+   "opened": 1793674493.380018
   }
  },
  "closed": [
@@ -253,21 +253,24 @@
    "proceeds": 3.2275043882322474,
    "pnl": -0.7724956117677526,
    "reason": "SELL"
+  },
+  {
+   "time": "2026-11-03 02:54:53",
+   "trader": "trader3",
+   "symbol": "HEDGE",
+   "mint": "wDSAqt4tEZpDAwB9XY6ejkZvMFuT1zUMjUh67txeYhf",
+   "cost": 4.0,
+   "proceeds": 3.639328223814531,
+   "pnl": -0.3606717761854692,
+   "reason": "SELL"
   }
  ],
  "last_sig": {
   "CzU8MaRcwvwUoNkwJFLbvtFWJugcEXAhDDQqNFE4ybb7": "tZNDHFKku9sAPHYMoemSmhQa62zGWsJJ2hLRcuy9g5tCWmEXYNPp7m8Urp1Nqqvc9G79VQZ7VovcCUdoVqYZbnZ",
-  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "39raj9rE1VGSsePWhgQNy76eFtXRYXaSe8kpvU3q4bdxrxiifPzMmfJtu8caEXjsQF64yicQXJTvNytVL7ggDCSf",
-  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "26tmezv5VCVniNeajNqk7YbgP5qeGybKZEEQSsP2bvsjWbV9vbv8JSDHSEpcUj31uDbeKZXLfanCL5P6JdghRGyV"
+  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "42udfxxPQSdqeTvCbw8zRNRp9QnmCeREK6a43bc9LwN1Ribs5imvtEUyfEg67RGmkfUMx3gCj6sipXf2kMSojj7r",
+  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "AFW83BEofXBBLnRAiQaFE6gGd9HRhyMUjRuKBZYW9s6MVWBuruQ9TSeQfSWFA2NvLdihUmm889ekK9uJB3DqkeM"
  },
  "wants": {
-  "wDSAqt4tEZpDAwB9XY6ejkZvMFuT1zUMjUh67txeYhf": {
-   "trader": "trader3",
-   "cum": 2000.0,
-   "usd_sum": 2000.0,
-   "tok_sum": 15476816.188593,
-   "since": 1793660575.8839035
-  },
   "6kKETm8xPeZ2z1DBYjXmxMTFAJudvGHJvRHu5Wt8uGtf": {
    "trader": "trader3",
    "cum": 4000.0,
