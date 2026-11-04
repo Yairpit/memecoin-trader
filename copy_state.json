@@ -1,5 +1,5 @@
 {
- "cash": 13.540694117147478,
+ "cash": 28.843440451395704,
  "positions": {
   "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump": {
    "trader": "trader3",
@@ -81,15 +81,6 @@
    "entry_price": 0.0006313693547769672,
    "trader_price": 0.0005981142634964325,
    "opened": 1793739452.8734567
-  },
-  "7ymF66Z6VhgNiwadtVhjTtT6U7iQRpSxeiRrhfufhigh": {
-   "trader": "Rowdy",
-   "symbol": "HIGH",
-   "tokens": 5880.367512046261,
-   "cost_usd": 10.057923146967854,
-   "entry_price": 0.0016933200000000001,
-   "trader_price": 0.0016997456441570505,
-   "opened": 1793827328.8662083
   }
  },
  "closed": [
@@ -372,34 +363,42 @@
    "proceeds": 7.641463028196867,
    "pnl": 2.6993861751647206,
    "reason": "SELL"
+  },
+  {
+   "time": "2026-11-04 22:09:43",
+   "trader": "Rowdy",
+   "symbol": "HIGH",
+   "mint": "7ymF66Z6VhgNiwadtVhjTtT6U7iQRpSxeiRrhfufhigh",
+   "cost": 5.028961573483927,
+   "proceeds": 7.8972133151625075,
+   "pnl": 2.8682517416785807,
+   "reason": "SELL"
+  },
+  {
+   "time": "2026-11-04 22:09:56",
+   "trader": "Rowdy",
+   "symbol": "HIGH",
+   "mint": "7ymF66Z6VhgNiwadtVhjTtT6U7iQRpSxeiRrhfufhigh",
+   "cost": 5.028961573483927,
+   "proceeds": 7.8972133151625075,
+   "pnl": 2.8682517416785807,
+   "reason": "SELL"
+  },
+  {
+   "time": "2026-11-04 22:10:08",
+   "trader": "Rowdy",
+   "symbol": "Sasha",
+   "mint": "5ooMWLgkiCHR5tSgcU9b43ESwwY3qXXWoxLC4Q6gPmoT",
+   "cost": 4.0,
+   "proceeds": 3.508319703923212,
+   "pnl": -0.4916802960767881,
+   "reason": "SELL"
   }
  ],
  "last_sig": {
-  "CzU8MaRcwvwUoNkwJFLbvtFWJugcEXAhDDQqNFE4ybb7": "2e4QrtfAy6Kd8SD36UkqowVfxEEyDpyXvqr8dM3FoJJf2e9Gdj3zB9PYMBA9vtZrxDKZJhLJLeRrd94V54aeWarG",
-  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "3ya6TJaseLaZxkykp7MvFWCASs4WNz1vUwvop2EW24ppR6kQ4JzCweR9vJ8oesBdPekFYPBkztypHe5Bxf76fk5D",
-  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "29bndYyYKKh1Hy7aFYAeubcthfwAee57cMVEMM71YQpqPX1oYRN5qUzU9kz7uwPtPeaS76KZPDy4iyVretBbXD13"
+  "CzU8MaRcwvwUoNkwJFLbvtFWJugcEXAhDDQqNFE4ybb7": "381iSzhpm2usEA9vbKmoBKEcisi3YCQDEAVbkddnpqK6nrtbVmfY7vPDskZa689cEL7qRQzPG88LUAsTr2UMRq8H",
+  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "3N2qQ5FtRgXbFcdH3ju23GkSNA8JVRU6Zv6DnV2z1i9s6JEyknKcgUsJf5Zs4G1Ajh7eYDPJXzbszzTfZyzHYctH",
+  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "2j9wCxgynH8f2wms6MPtXSziFZobiaR17UmxefT5tD7dgHz9Sv3jWfALZ7Uxi3hK2KbudpavWc1dMq5xUFqEhjA3"
  },
- "wants": {
-  "7ymF66Z6VhgNiwadtVhjTtT6U7iQRpSxeiRrhfufhigh": {
-   "trader": "Rowdy",
-   "cum": 13410.564195957137,
-   "usd_sum": 13410.564195957137,
-   "tok_sum": 7363681.984245999,
-   "since": 1793827328.8061137
-  },
-  "5ooMWLgkiCHR5tSgcU9b43ESwwY3qXXWoxLC4Q6gPmoT": {
-   "trader": "Rowdy",
-   "cum": 2500.0,
-   "usd_sum": 2500.0,
-   "tok_sum": 24896046.633606,
-   "since": 1793829365.4794369
-  },
-  "CjTYUYnZtif98ScYBdwd9ziRK3Py5s1BQWy7fHqwpump": {
-   "trader": "Rowdy",
-   "cum": 1111.0,
-   "usd_sum": 1111.0,
-   "tok_sum": 25390600.117324,
-   "since": 1793829975.9880219
-  }
- }
+ "wants": {}
 }
