@@ -397,8 +397,16 @@
  ],
  "last_sig": {
   "CzU8MaRcwvwUoNkwJFLbvtFWJugcEXAhDDQqNFE4ybb7": "5b4M36P79xG8rTcJgq6nQADF72nSwhd2tJDx8Sr9rxXWedxSnxeWfhjZKiKzFa1FoXn1qcdJAZQkegRtD2Y7sQgY",
-  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "6vYPncHY1rRQmWAteFqc1YKmxAJJiDf7N623iKC4nZmPZ3DWfjqowmjdSCUj8e8sU5ho88eBcpX2ixg1nJbcTbr",
-  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "5E6HE6gExivTSnfJEo6jELPs3B54bbxLQzcH3BZsomad3GA86cmZDGKTCVAKAd3SSJmwVLabzerNGcigzSWthWp3"
+  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "59Cn3Dz4TfvoRgChwSU37LiTEX2sHy2pMcF22ZJJXyJj6k36mpwhSvKNmtgmM7f3QKPxvAqwiQoSq31vxkEH1tx2",
+  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "taPkESspXhzWBmsw6MCTgBsS3QyLPRRSoJJ5tBrJJ3VpRE83vKn1uxLyy6pNRxz534CwXy63Qj4QR6rg6AP7gbb"
  },
- "wants": {}
+ "wants": {
+  "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx": {
+   "trader": "pointfarmcap",
+   "cum": 1000.0,
+   "usd_sum": 1000.0,
+   "tok_sum": 9362.411760263145,
+   "since": 1793986724.083204
+  }
+ }
 }
