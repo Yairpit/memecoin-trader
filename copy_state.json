@@ -1,5 +1,5 @@
 {
- "cash": 31.659272925744137,
+ "cash": 23.659272925744137,
  "positions": {
   "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump": {
    "trader": "trader3",
@@ -81,6 +81,15 @@
    "entry_price": 0.0006313693547769672,
    "trader_price": 0.0005981142634964325,
    "opened": 1793739452.8734567
+  },
+  "BH5bq6NamreYUbu1hG6RQyCXXzrDvQ7Zi7w82mrbpump": {
+   "trader": "Rowdy",
+   "symbol": "PERPULATOR",
+   "tokens": 49995.58119863143,
+   "cost_usd": 8.0,
+   "entry_price": 0.000158414,
+   "trader_price": 0.00017536784420440325,
+   "opened": 1794269124.0060182
   }
  },
  "closed": [
@@ -416,9 +425,17 @@
   }
  ],
  "last_sig": {
-  "CzU8MaRcwvwUoNkwJFLbvtFWJugcEXAhDDQqNFE4ybb7": "5BZBAzu4BpZP7KnXGNXAC8vyNvQzHbgiebXoxjCGLiuUSQgxMRr88uMeS1Q6Cf7Ks44X18oHgX8ratTwvmz9smZo",
-  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "5pNn43oe3piLxsuLYnzjGNnoKiYNdxdxzRWPZKAssVQzuoueqKMe7TMEBacrhE1Ap4GqMLEgQjoJa5Er469LYTMC",
-  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "y186huG6NpFpu6a3TuzQCgpEQ59PMAaWnnr9sNF6LL4QzZrHamwW2FLqUy7eF1skgZr6zAKnXREdUouUWBzQn3Y"
+  "CzU8MaRcwvwUoNkwJFLbvtFWJugcEXAhDDQqNFE4ybb7": "54NjDrpdfzN4FhszHPjw9YysHKLjWKWUAfyMiaoQmiAxS6DdiiJC7yPrt4h3yguQG1Tkhva479KgzudwXgVLNuJm",
+  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "6LfTXbjey4j4QM8yvTAUfXw7Daq7KXrynbAjgWDuHkxZ5GZt5FeDNYWfi27diC33QYoUY8c2m4f1mboKortmUzf",
+  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "23E1FiuJ3WYMGhen1gfHooagW8mznjNzFc3i48bu5iKCmMssvcb5Xhbqsf9xyZUwX3y6SvzHB7W9aH98piDmp97q"
  },
- "wants": {}
+ "wants": {
+  "BH5bq6NamreYUbu1hG6RQyCXXzrDvQ7Zi7w82mrbpump": {
+   "trader": "Rowdy",
+   "cum": 3333.0,
+   "usd_sum": 3333.0,
+   "tok_sum": 19005764.797537,
+   "since": 1794269123.886077
+  }
+ }
 }
