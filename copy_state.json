@@ -1,5 +1,5 @@
 {
- "cash": 25.0874296094642,
+ "cash": 26.56212188511132,
  "positions": {
   "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump": {
    "trader": "trader3",
@@ -40,8 +40,8 @@
   "7GWBnuU5ps1ZduiAsuKaYCehspfWWKZw69NF2E1xrZAA": {
    "trader": "pointfarmcap",
    "symbol": "AGAIN",
-   "tokens": 19412.950975107207,
-   "cost_usd": 2.260079283371648,
+   "tokens": 12508.014401183962,
+   "cost_usd": 1.456198197815414,
    "entry_price": 0.000115257,
    "trader_price": 0.0001234884431018345,
    "opened": 1793152995.2851622
@@ -432,12 +432,22 @@
    "proceeds": 1.428156683720063,
    "pnl": 0.6882359670917109,
    "reason": "SELL"
+  },
+  {
+   "time": "2026-11-10 02:48:15",
+   "trader": "pointfarmcap",
+   "symbol": "AGAIN",
+   "mint": "7GWBnuU5ps1ZduiAsuKaYCehspfWWKZw69NF2E1xrZAA",
+   "cost": 0.803881085556234,
+   "proceeds": 1.474692275647121,
+   "pnl": 0.670811190090887,
+   "reason": "SELL"
   }
  ],
  "last_sig": {
-  "CzU8MaRcwvwUoNkwJFLbvtFWJugcEXAhDDQqNFE4ybb7": "5PPxHwpt4C1wEhZ67E98iByLNvQ3CVjQEsxLSjmUtPFVGhvfR8Z4EqGWX4WMv6RJhcNLQFhGcoEKDJGctXUNapAB",
-  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "4zfmEzR5aZPr13Ao8spg4C1YRVtb1oyxS9dRJxrHafzcNvcZo9RExUXUdE6QYd5zWaAVPuP7RE8RBCjrukQMRbU8",
-  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "2tj2q89ZRpLt3Yggpi5y4vQj9wohM1f98wjzTkctoveWDeATtEbuR9tRwNxMo2uAzNTuqx6FztnEyCEmMiEDAF7k"
+  "CzU8MaRcwvwUoNkwJFLbvtFWJugcEXAhDDQqNFE4ybb7": "56qPVF1pFjQHdprL685daXkS1ov3uxfqdMtCJo6eDoZTvtKpVRMaD99CGbWsU2gy9vZvSbcSNBSWQvRH8VtsJnRc",
+  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "21QBjBvhwVu492Qppzeni43ghSAGg3MAaKxa47DP35U3F76NXn544hbix91L5wb3s5to655rAaUsbCWpAMB9J4pA",
+  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "4jwrunE5xWvLg8iS7PrhBRQoWp3aCS39C8jyGWsVgSAqWdVEicnpwLoyikgdnzUZPpYezSpQQqnTfv8vtJU5Y5b8"
  },
  "wants": {
   "BH5bq6NamreYUbu1hG6RQyCXXzrDvQ7Zi7w82mrbpump": {
@@ -449,9 +459,9 @@
   },
   "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx": {
    "trader": "pointfarmcap",
-   "cum": 1000.0,
-   "usd_sum": 1000.0,
-   "tok_sum": 19311.939818881452,
+   "cum": 2000.0,
+   "usd_sum": 2000.0,
+   "tok_sum": 38714.306330017745,
    "since": 1794273907.1398437
   }
  }
