@@ -1,5 +1,5 @@
 {
- "cash": 23.659272925744137,
+ "cash": 25.0874296094642,
  "positions": {
   "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump": {
    "trader": "trader3",
@@ -40,8 +40,8 @@
   "7GWBnuU5ps1ZduiAsuKaYCehspfWWKZw69NF2E1xrZAA": {
    "trader": "pointfarmcap",
    "symbol": "AGAIN",
-   "tokens": 25768.49996095682,
-   "cost_usd": 3.0,
+   "tokens": 19412.950975107207,
+   "cost_usd": 2.260079283371648,
    "entry_price": 0.000115257,
    "trader_price": 0.0001234884431018345,
    "opened": 1793152995.2851622
@@ -422,12 +422,22 @@
    "proceeds": 4.783402853587873,
    "pnl": 0.783402853587873,
    "reason": "SELL"
+  },
+  {
+   "time": "2026-11-10 01:24:42",
+   "trader": "pointfarmcap",
+   "symbol": "AGAIN",
+   "mint": "7GWBnuU5ps1ZduiAsuKaYCehspfWWKZw69NF2E1xrZAA",
+   "cost": 0.7399207166283521,
+   "proceeds": 1.428156683720063,
+   "pnl": 0.6882359670917109,
+   "reason": "SELL"
   }
  ],
  "last_sig": {
-  "CzU8MaRcwvwUoNkwJFLbvtFWJugcEXAhDDQqNFE4ybb7": "54NjDrpdfzN4FhszHPjw9YysHKLjWKWUAfyMiaoQmiAxS6DdiiJC7yPrt4h3yguQG1Tkhva479KgzudwXgVLNuJm",
-  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "6LfTXbjey4j4QM8yvTAUfXw7Daq7KXrynbAjgWDuHkxZ5GZt5FeDNYWfi27diC33QYoUY8c2m4f1mboKortmUzf",
-  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "23E1FiuJ3WYMGhen1gfHooagW8mznjNzFc3i48bu5iKCmMssvcb5Xhbqsf9xyZUwX3y6SvzHB7W9aH98piDmp97q"
+  "CzU8MaRcwvwUoNkwJFLbvtFWJugcEXAhDDQqNFE4ybb7": "5PPxHwpt4C1wEhZ67E98iByLNvQ3CVjQEsxLSjmUtPFVGhvfR8Z4EqGWX4WMv6RJhcNLQFhGcoEKDJGctXUNapAB",
+  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "4zfmEzR5aZPr13Ao8spg4C1YRVtb1oyxS9dRJxrHafzcNvcZo9RExUXUdE6QYd5zWaAVPuP7RE8RBCjrukQMRbU8",
+  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "2tj2q89ZRpLt3Yggpi5y4vQj9wohM1f98wjzTkctoveWDeATtEbuR9tRwNxMo2uAzNTuqx6FztnEyCEmMiEDAF7k"
  },
  "wants": {
   "BH5bq6NamreYUbu1hG6RQyCXXzrDvQ7Zi7w82mrbpump": {
@@ -436,6 +446,13 @@
    "usd_sum": 3333.0,
    "tok_sum": 19005764.797537,
    "since": 1794269123.886077
+  },
+  "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx": {
+   "trader": "pointfarmcap",
+   "cum": 1000.0,
+   "usd_sum": 1000.0,
+   "tok_sum": 19311.939818881452,
+   "since": 1794273907.1398437
   }
  }
 }
