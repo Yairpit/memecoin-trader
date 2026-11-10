@@ -1,5 +1,5 @@
 {
- "cash": 24.018320082926735,
+ "cash": 26.325116669180197,
  "positions": {
   "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump": {
    "trader": "trader3",
@@ -40,8 +40,8 @@
   "7GWBnuU5ps1ZduiAsuKaYCehspfWWKZw69NF2E1xrZAA": {
    "trader": "pointfarmcap",
    "symbol": "AGAIN",
-   "tokens": 24388.54590109782,
-   "cost_usd": 4.0,
+   "tokens": 12955.12165112268,
+   "cost_usd": 2.124787874383199,
    "entry_price": 0.00016401141815592808,
    "trader_price": 0.0001234884431018345,
    "opened": 1793152995.2851622
@@ -442,34 +442,30 @@
    "proceeds": 1.474692275647121,
    "pnl": 0.670811190090887,
    "reason": "SELL"
+  },
+  {
+   "time": "2026-11-10 13:30:01",
+   "trader": "pointfarmcap",
+   "symbol": "AGAIN",
+   "mint": "7GWBnuU5ps1ZduiAsuKaYCehspfWWKZw69NF2E1xrZAA",
+   "cost": 1.875212125616801,
+   "proceeds": 2.306796586253462,
+   "pnl": 0.431584460636661,
+   "reason": "SELL"
   }
  ],
  "last_sig": {
-  "CzU8MaRcwvwUoNkwJFLbvtFWJugcEXAhDDQqNFE4ybb7": "qrqwFkt4cPsRXR8i96BuNCDHRAtBk3Qrm9CV3fZR8d3tNXdABzzmXJZTefP6xk9wtoiW3JA45jLDhKiLWNjTkwn",
-  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "2QzWKA1RAZ9xsPJbxQ1rdTDQNrvxJCuW7C8WQ96UapR9wrNDWtiu4LvtxuoNJ9ZEH9i32QJyt5woii5TvqLsb5fH",
-  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "4jwrunE5xWvLg8iS7PrhBRQoWp3aCS39C8jyGWsVgSAqWdVEicnpwLoyikgdnzUZPpYezSpQQqnTfv8vtJU5Y5b8"
+  "CzU8MaRcwvwUoNkwJFLbvtFWJugcEXAhDDQqNFE4ybb7": "2y7jCQjYfAvMhi54GgHBG8ju8vDQF6xDCP2q4gRaMAPzKFUBVzUDc6ph1GsHfXLn5zMjP8etaJHgDRcHfzGrzKNX",
+  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "3ckmNeG5Lb3Kbx5nLuCyYD7pA6Jdb7gDR2ZVLWu6esr2W3YhoK2pLsVhSFf3MyPNW9X9NTZ56cwJk6zSzFa3UQDV",
+  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "AfrAtN6A7eQiTuLrgoMTdy1iLzYhj6unT2bgi9oqd3irHXcY12LMpmjLDAcHpvmGcj2vvQDnW4Lyvc7ooHfi23b"
  },
  "wants": {
-  "BH5bq6NamreYUbu1hG6RQyCXXzrDvQ7Zi7w82mrbpump": {
-   "trader": "Rowdy",
-   "cum": 3333.0,
-   "usd_sum": 3333.0,
-   "tok_sum": 19005764.797537,
-   "since": 1794269123.886077
-  },
   "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx": {
    "trader": "pointfarmcap",
-   "cum": 2000.0,
-   "usd_sum": 2000.0,
-   "tok_sum": 38714.306330017745,
-   "since": 1794273907.1398437
-  },
-  "7GWBnuU5ps1ZduiAsuKaYCehspfWWKZw69NF2E1xrZAA": {
-   "trader": "pointfarmcap",
-   "cum": 1000.0000000000001,
-   "usd_sum": 1000.0000000000001,
-   "tok_sum": 4607049.50237231,
-   "since": 1794280744.909284
+   "cum": 1000.0000000000002,
+   "usd_sum": 1000.0000000000002,
+   "tok_sum": 20194.98162777722,
+   "since": 1794317438.5580113
   }
  }
 }
