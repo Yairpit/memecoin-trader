@@ -1,5 +1,5 @@
 {
- "cash": 26.325116669180197,
+ "cash": 27.380096790849596,
  "positions": {
   "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump": {
    "trader": "trader3",
@@ -40,8 +40,8 @@
   "7GWBnuU5ps1ZduiAsuKaYCehspfWWKZw69NF2E1xrZAA": {
    "trader": "pointfarmcap",
    "symbol": "AGAIN",
-   "tokens": 12955.12165112268,
-   "cost_usd": 2.124787874383199,
+   "tokens": 6477.5608255613415,
+   "cost_usd": 1.0623939371915998,
    "entry_price": 0.00016401141815592808,
    "trader_price": 0.0001234884431018345,
    "opened": 1793152995.2851622
@@ -452,11 +452,21 @@
    "proceeds": 2.306796586253462,
    "pnl": 0.431584460636661,
    "reason": "SELL"
+  },
+  {
+   "time": "2026-11-10 14:40:59",
+   "trader": "pointfarmcap",
+   "symbol": "AGAIN",
+   "mint": "7GWBnuU5ps1ZduiAsuKaYCehspfWWKZw69NF2E1xrZAA",
+   "cost": 1.0623939371915994,
+   "proceeds": 1.0549801216693993,
+   "pnl": -0.007413815522200107,
+   "reason": "SELL"
   }
  ],
  "last_sig": {
   "CzU8MaRcwvwUoNkwJFLbvtFWJugcEXAhDDQqNFE4ybb7": "2y7jCQjYfAvMhi54GgHBG8ju8vDQF6xDCP2q4gRaMAPzKFUBVzUDc6ph1GsHfXLn5zMjP8etaJHgDRcHfzGrzKNX",
-  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "3ckmNeG5Lb3Kbx5nLuCyYD7pA6Jdb7gDR2ZVLWu6esr2W3YhoK2pLsVhSFf3MyPNW9X9NTZ56cwJk6zSzFa3UQDV",
+  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "4V27LfsTd5PFTdQaUWxmxZG7DgkN7jJKsnrpNAYRYbDS9EUoT4rUHZ95tVsg1tvQGmjQ1tj113GYtCh4GxxMnEwN",
   "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "AfrAtN6A7eQiTuLrgoMTdy1iLzYhj6unT2bgi9oqd3irHXcY12LMpmjLDAcHpvmGcj2vvQDnW4Lyvc7ooHfi23b"
  },
  "wants": {
@@ -466,6 +476,13 @@
    "usd_sum": 1000.0000000000002,
    "tok_sum": 20194.98162777722,
    "since": 1794317438.5580113
+  },
+  "5wsjHxT5nW5jQuVupXUNnYszF3WoWCfGGk9LMcsCJzY8": {
+   "trader": "pointfarmcap",
+   "cum": 1000.0,
+   "usd_sum": 1000.0,
+   "tok_sum": 238116.73853099998,
+   "since": 1794321932.789412
   }
  }
 }
