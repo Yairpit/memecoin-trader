@@ -1,5 +1,5 @@
 {
- "cash": 24.487765325793543,
+ "cash": 24.541569972865567,
  "positions": {
   "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump": {
    "trader": "trader3",
@@ -31,8 +31,8 @@
   "4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz": {
    "trader": "pointfarmcap",
    "symbol": "GTA6",
-   "tokens": 1059.9251600528935,
-   "cost_usd": 7.939594567069035,
+   "tokens": 1052.8382642389897,
+   "cost_usd": 7.886508668533852,
    "entry_price": 0.007490712426029046,
    "trader_price": 0.004592287424444218,
    "opened": 1793109645.3138988
@@ -502,20 +502,22 @@
    "proceeds": 0.07010553792474825,
    "pnl": 0.009700104993783251,
    "reason": "SELL"
+  },
+  {
+   "time": "2026-11-11 08:28:39",
+   "trader": "pointfarmcap",
+   "symbol": "GTA6",
+   "mint": "4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz",
+   "cost": 0.05308589853518216,
+   "proceeds": 0.053804647072025646,
+   "pnl": 0.0007187485368434846,
+   "reason": "SELL"
   }
  ],
  "last_sig": {
-  "CzU8MaRcwvwUoNkwJFLbvtFWJugcEXAhDDQqNFE4ybb7": "2cJys6KFQt8iLWcJmSrSYajhTNnQkrZqYKa4YtfQGaGciYQUjqaWGFxhP8yibM22DczxAjifdMV61EFty1zqJUz6",
-  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "FS4HPZHvDRXLRPLUiHxPfWNNVYc6B11s1nR8TW64D2Ta6cfEvXJNPxa4ueNSKg9cKLQXq2XX6c9zj7yZFGsJgyt",
-  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "3p635XiGZjCxB52ix73eR83zscXTFgVhpuZxuY9sBELNvLz2bZ4BreGznTnHCheLLG9T91jwN8aEzwHxsMdrb8UN"
+  "CzU8MaRcwvwUoNkwJFLbvtFWJugcEXAhDDQqNFE4ybb7": "2EFBPUmsr4xYD7h2oQHYnEFRa1E7ts5YScY69HeDnzhEfQNBxHZ1AUnwFH78aFg25G7QL4wihimuanwqDRqdpEML",
+  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "5LrKbZALGSDtTN1HKMEoHz8fhxGu7on7jE3gQ47KCA6Azmo8N7tLsbG7vxKhyYGYSKBq7svWzZwC7wSmiV1ZrbJz",
+  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "4CH8MqeYHTTjXXY9pbqvSyY3ZYzHkX9tAtbXmw4ksaDtiX21ihaRewBG8Wx4BVfPU1Z1wAtVrmQCEJhgehz365sM"
  },
- "wants": {
-  "HcRLc9VDgjLeK154xDawfb1dmVJ98DoSqcwTHGqiDeJR": {
-   "trader": "pointfarmcap",
-   "cum": 2000.0,
-   "usd_sum": 2000.0,
-   "tok_sum": 80370.960574929,
-   "since": 1794358242.5273614
-  }
- }
+ "wants": {}
 }
