@@ -1,5 +1,5 @@
 {
- "cash": 19.051604155388933,
+ "cash": 19.107208160022562,
  "positions": {
   "DKYcjobF7HPtL9RyQBRdeRQ2iWvizpfbgWwPWNXdpump": {
    "trader": "trader3",
@@ -22,8 +22,8 @@
   "4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz": {
    "trader": "pointfarmcap",
    "symbol": "GTA6",
-   "tokens": 998.8791629146932,
-   "cost_usd": 7.482316557746583,
+   "tokens": 987.0453710584353,
+   "cost_usd": 7.393673026041871,
    "entry_price": 0.007490712426029046,
    "trader_price": 0.004592287424444218,
    "opened": 1793109645.3138988
@@ -632,12 +632,22 @@
    "proceeds": 0.05438025816598836,
    "pnl": -0.02702198777280307,
    "reason": "SELL"
+  },
+  {
+   "time": "2026-11-11 21:02:32",
+   "trader": "pointfarmcap",
+   "symbol": "GTA6",
+   "mint": "4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz",
+   "cost": 0.08864353170471248,
+   "proceeds": 0.05560400463362898,
+   "pnl": -0.0330395270710835,
+   "reason": "SELL"
   }
  ],
  "last_sig": {
   "CzU8MaRcwvwUoNkwJFLbvtFWJugcEXAhDDQqNFE4ybb7": "5WqMZEXHoitPjcccReW2jjgmjBFo4oRrBerhHVcmNxbTJgdBTJ7F9ybajoEwxCF59GyR8AUUey7ETcrYqEA2SWEe",
-  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "4t47zCi4Qa5AddWcYcpgCLhDTmGzC2H1Z2xJs2Va26BSReGoCe2et9BdCGJuJ7N6EamsinjTjPGL48qYYMt3RQRY",
-  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "3gQUjgyrr93D3yLpPbRDhF7EfsB9jB7MjMBondh76r96Ey3yv2jUABU73B4iFSncfwx3R6GUUAo9de4NMc3LAnTw"
+  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "3m82QY8ivibGruvsH48KVSNRmexqP4B5DdSppznxNtpa4RCZCA3jVsJ8AtzWp4NvPLtW2rRtDz7mwCUJwdBg7aMw",
+  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "2d1sDbZKwAH3px1XeX6vJUBCVrU8zK4FH9wswwSm68wF5y15KSVK1UuysygUM2uKGcK7aLRRZQ5MJBbK1Qfu4eCV"
  },
  "wants": {
   "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx": {
@@ -653,6 +663,13 @@
    "usd_sum": 1000.0,
    "tok_sum": 265836.44153199997,
    "since": 1794421194.5281582
+  },
+  "DKYcjobF7HPtL9RyQBRdeRQ2iWvizpfbgWwPWNXdpump": {
+   "trader": "trader3",
+   "cum": 4000.0,
+   "usd_sum": 4000.0,
+   "tok_sum": 676870.1331040002,
+   "since": 1794432219.8720345
   }
  }
 }
