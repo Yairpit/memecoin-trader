@@ -1,11 +1,11 @@
 {
- "cash": 24.541569972865567,
+ "cash": 29.676599024653427,
  "positions": {
   "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump": {
    "trader": "trader3",
    "symbol": "Dacity",
-   "tokens": 2493.853485834846,
-   "cost_usd": 21.0,
+   "tokens": 1339.3509011562364,
+   "cost_usd": 11.278276403982627,
    "entry_price": 0.008420703188571644,
    "trader_price": 0.009304760275373003,
    "opened": 1792703060.689745
@@ -512,12 +512,42 @@
    "proceeds": 0.053804647072025646,
    "pnl": 0.0007187485368434846,
    "reason": "SELL"
+  },
+  {
+   "time": "2026-11-11 13:12:44",
+   "trader": "trader3",
+   "symbol": "Dacity",
+   "mint": "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump",
+   "cost": 2.2363613975957395,
+   "proceeds": 1.3868827920160436,
+   "pnl": -0.8494786055796959,
+   "reason": "SELL"
+  },
+  {
+   "time": "2026-11-11 13:27:49",
+   "trader": "trader3",
+   "symbol": "Dacity",
+   "mint": "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump",
+   "cost": 3.6849863046514857,
+   "proceeds": 1.8503041920490697,
+   "pnl": -1.834682112602416,
+   "reason": "SELL"
+  },
+  {
+   "time": "2026-11-11 13:28:02",
+   "trader": "trader3",
+   "symbol": "Dacity",
+   "mint": "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump",
+   "cost": 3.800375893770148,
+   "proceeds": 1.8978420677227472,
+   "pnl": -1.9025338260474007,
+   "reason": "SELL"
   }
  ],
  "last_sig": {
   "CzU8MaRcwvwUoNkwJFLbvtFWJugcEXAhDDQqNFE4ybb7": "2EFBPUmsr4xYD7h2oQHYnEFRa1E7ts5YScY69HeDnzhEfQNBxHZ1AUnwFH78aFg25G7QL4wihimuanwqDRqdpEML",
   "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "57ysDLJtJ1zzNJ7wKaUtFa213bXFFmUTs4Ga4NM63W1Btmyo5zj2hvnaSEHXJuiqYqAJaHw6GSYoNV1Rf61zToHA",
-  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "4CH8MqeYHTTjXXY9pbqvSyY3ZYzHkX9tAtbXmw4ksaDtiX21ihaRewBG8Wx4BVfPU1Z1wAtVrmQCEJhgehz365sM"
+  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "5FitK7ym2QZp3cGpNTK3qNdX3VmzR9cUtN3Gqw75Jn9wydSseBduQQFb4KEjnjcXnaME6uKhXDe8G2oHw7bCUhy9"
  },
  "wants": {}
 }
