@@ -1,5 +1,5 @@
 {
- "cash": 16.025748852471814,
+ "cash": 16.288837167592757,
  "positions": {
   "DKYcjobF7HPtL9RyQBRdeRQ2iWvizpfbgWwPWNXdpump": {
    "trader": "trader3",
@@ -22,8 +22,8 @@
   "4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz": {
    "trader": "pointfarmcap",
    "symbol": "GTA6",
-   "tokens": 863.9006047744789,
-   "cost_usd": 6.471230995038196,
+   "tokens": 828.4157710292494,
+   "cost_usd": 6.20542430996723,
    "entry_price": 0.007490712426029046,
    "trader_price": 0.004592287424444218,
    "opened": 1793109645.3138988
@@ -822,12 +822,62 @@
    "proceeds": 0.05308677565842641,
    "pnl": -0.0012282083901475963,
    "reason": "SELL"
+  },
+  {
+   "time": "2026-11-12 22:38:14",
+   "trader": "pointfarmcap",
+   "symbol": "GTA6",
+   "mint": "4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz",
+   "cost": 0.05539873148574667,
+   "proceeds": 0.05308070938801347,
+   "pnl": -0.0023180220977331994,
+   "reason": "SELL"
+  },
+  {
+   "time": "2026-11-12 22:45:54",
+   "trader": "pointfarmcap",
+   "symbol": "GTA6",
+   "mint": "4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz",
+   "cost": 0.05375133217998721,
+   "proceeds": 0.05202594629767781,
+   "pnl": -0.001725385882309402,
+   "reason": "SELL"
+  },
+  {
+   "time": "2026-11-12 22:58:29",
+   "trader": "pointfarmcap",
+   "symbol": "GTA6",
+   "mint": "4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz",
+   "cost": 0.05221789411178261,
+   "proceeds": 0.052442903067876384,
+   "pnl": 0.00022500895609377236,
+   "reason": "SELL"
+  },
+  {
+   "time": "2026-11-12 23:05:31",
+   "trader": "pointfarmcap",
+   "symbol": "GTA6",
+   "mint": "4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz",
+   "cost": 0.05205929628254321,
+   "proceeds": 0.05250386175273634,
+   "pnl": 0.0004445654701931284,
+   "reason": "SELL"
+  },
+  {
+   "time": "2026-11-12 23:25:33",
+   "trader": "pointfarmcap",
+   "symbol": "GTA6",
+   "mint": "4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz",
+   "cost": 0.05237943101090519,
+   "proceeds": 0.05303489461463687,
+   "pnl": 0.0006554636037316777,
+   "reason": "SELL"
   }
  ],
  "last_sig": {
-  "CzU8MaRcwvwUoNkwJFLbvtFWJugcEXAhDDQqNFE4ybb7": "36WpsaeCRmvu2SCfJRChgom8NX3M4UR2ugnxYyM43tmuS7sicJQMJGcEgF5nziBDyXMgPBtzbdazk7GmKUkmtfUu",
-  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "5CpBUfYLcqM1nWeDCXpBphyUqsqq16QmnLBqTdK4eiph9YTtHy2cQ1FqTeWiRVS3XSLQ2GCypwgBsSa9dsHXTZw",
-  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "3yWFr2NrWVu5itzjtyicbaxUDD2SchESaxuVczmHRE3PEAWZGJw3MbN25F9uEjcQAv9Q1hQ7vSAc9H6kbf1iXvXG"
+  "CzU8MaRcwvwUoNkwJFLbvtFWJugcEXAhDDQqNFE4ybb7": "4bqXgtWrM9MuTRJ8wQX2LT9KFRwMdp5Pm1v771kUFbSvK9ZzUZjiFEGCPP7oNhmBUVgXaQFFCTL2fjsDWdKGuZD4",
+  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "24evkmALzWaqeuUyoHyosFAdNEH33M917RwGeDA7CZrW77N5eCsS2bnq5a8Lgf5ggMDj7R6EjH8dECLV11TNSW33",
+  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "3EvNnofBsgzYNBJc654R5NhNagmQ7m8YWMhjhJ45Za3pqXjvZFy1tu1gKDmbLtTKS6r6wxfD8EgNUKhSkVwYqUep"
  },
  "wants": {}
 }
