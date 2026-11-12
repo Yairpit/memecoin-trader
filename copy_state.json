@@ -657,15 +657,7 @@
  "last_sig": {
   "CzU8MaRcwvwUoNkwJFLbvtFWJugcEXAhDDQqNFE4ybb7": "5WqMZEXHoitPjcccReW2jjgmjBFo4oRrBerhHVcmNxbTJgdBTJ7F9ybajoEwxCF59GyR8AUUey7ETcrYqEA2SWEe",
   "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "5xkzrwnVzp7Q1ozVLpHQ58bbnZWEeJtzHFcaFHH151yAmHzL1EHXyfLwZEtgiSsXfAwyaFj6DXxXK5wdUhiL5NKH",
-  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "5Yi7qoVti2TwKeckN22D65XeLCaeJaFjE1WSV22QvDZyL7u8NZHYvzzGD5ofuCNtBBA5XMe326hyFDiwg6gm3Ugs"
+  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "52cstCD5dvDnhU96Mn9PSk1EVERqNGK5PtDfJrr2GbChRWRXSzLmQa2WRBc7kCjCCsnEBfaoP3K2hZDbDKi2SC2h"
  },
- "wants": {
-  "DKYcjobF7HPtL9RyQBRdeRQ2iWvizpfbgWwPWNXdpump": {
-   "trader": "trader3",
-   "cum": 4000.0,
-   "usd_sum": 4000.0,
-   "tok_sum": 676870.1331040002,
-   "since": 1794432219.8720345
-  }
- }
+ "wants": {}
 }
