@@ -1,5 +1,5 @@
 {
- "cash": 18.595842192502587,
+ "cash": 18.85857130655285,
  "positions": {
   "DKYcjobF7HPtL9RyQBRdeRQ2iWvizpfbgWwPWNXdpump": {
    "trader": "trader3",
@@ -22,8 +22,8 @@
   "4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz": {
    "trader": "pointfarmcap",
    "symbol": "GTA6",
-   "tokens": 515.3301200036956,
-   "cost_usd": 3.8601897334187187,
+   "tokens": 477.6734358630853,
+   "cost_usd": 3.578114341603598,
    "entry_price": 0.007490712426029046,
    "trader_price": 0.004592287424444218,
    "opened": 1793109645.3138988
@@ -1302,12 +1302,62 @@
    "proceeds": 0.053965233843752805,
    "pnl": -0.004072785309397434,
    "reason": "SELL"
+  },
+  {
+   "time": "2026-11-13 20:06:54",
+   "trader": "pointfarmcap",
+   "symbol": "GTA6",
+   "mint": "4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz",
+   "cost": 0.05624665220304039,
+   "proceeds": 0.052479843828845844,
+   "pnl": -0.003766808374194547,
+   "reason": "SELL"
+  },
+  {
+   "time": "2026-11-13 20:34:12",
+   "trader": "pointfarmcap",
+   "symbol": "GTA6",
+   "mint": "4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz",
+   "cost": 0.056469237037351766,
+   "proceeds": 0.05257893298776175,
+   "pnl": -0.003890304049590017,
+   "reason": "SELL"
+  },
+  {
+   "time": "2026-11-13 20:35:14",
+   "trader": "pointfarmcap",
+   "symbol": "GTA6",
+   "mint": "4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz",
+   "cost": 0.05719710694429096,
+   "proceeds": 0.05325665815404035,
+   "pnl": -0.003940448790250614,
+   "reason": "SELL"
+  },
+  {
+   "time": "2026-11-13 20:36:41",
+   "trader": "pointfarmcap",
+   "symbol": "GTA6",
+   "mint": "4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz",
+   "cost": 0.056066175679812216,
+   "proceeds": 0.052203639514361175,
+   "pnl": -0.0038625361654510415,
+   "reason": "SELL"
+  },
+  {
+   "time": "2026-11-13 20:42:54",
+   "trader": "pointfarmcap",
+   "symbol": "GTA6",
+   "mint": "4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz",
+   "cost": 0.05609621995062511,
+   "proceeds": 0.05221003956525578,
+   "pnl": -0.0038861803853693297,
+   "reason": "SELL"
   }
  ],
  "last_sig": {
   "CzU8MaRcwvwUoNkwJFLbvtFWJugcEXAhDDQqNFE4ybb7": "cSBQmDUbmDhQHLdZZTtfh2WWR9HYL8KWHNu7DueA53hMWGWXtkmDuZVB6VEAtSGh8imnTE8D5dhgSsK1sWzeJCn",
-  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "5JjEoRf43TK5vuDzwmRNgdcsGQUFKBrtpih9KVnNJqhxMfKs2Me2BuXqzJafgVB7zGSaQcyu7T3uY8ZxgrnVcNqV",
-  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "558r4aGTptQB3ASf43EaHKUwLwpnA5Dw1NJQkTS3V49bRi2aYKsnNyTPZiFfmNXzGLcQViLtWahAxuY9akdA35NJ"
+  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "28K74VnjuyEJR6o2JZRi2yaYw7wB3deaH2gKcs1kNDk9CPHK5UeboMRLa1SCq41V3vqHtAkFNLVc2MnBXtYtmSFf",
+  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "3QKf4eUfe19RVBdAgxBBn2pEw6sLu6b5ytm43aNgUmEcLFT9vLpBuwq2umBEYmEzgnC3WrsBX2LwecmruSurfYub"
  },
  "wants": {}
 }
