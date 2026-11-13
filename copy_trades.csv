@@ -112,3 +112,5 @@ time,trader,event,mint,symbol,usd,price,trader_price,slip_vs_trader_pct,pnl_usd,
 2026-11-12 22:58:29,pointfarmcap,SELL,4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz,GTA6,0.0524,0.007598980000000001,,,0.0002,0.43
 2026-11-12 23:05:31,pointfarmcap,SELL,4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz,GTA6,0.0525,0.007630990000000001,,,0.0004,0.85
 2026-11-12 23:25:33,pointfarmcap,SELL,4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz,GTA6,0.053,0.00766106,,,0.0007,1.25
+2026-11-13 00:03:31,pointfarmcap,SELL,4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz,GTA6,0.0523,0.00747191,,,-0.0007,-1.25
+2026-11-13 00:15:42,pointfarmcap,SELL,4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz,GTA6,0.0526,0.00747191,,,-0.0007,-1.25
