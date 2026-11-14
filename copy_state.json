@@ -1,5 +1,5 @@
 {
- "cash": 20.529826097354814,
+ "cash": 21.932300705024304,
  "positions": {
   "DKYcjobF7HPtL9RyQBRdeRQ2iWvizpfbgWwPWNXdpump": {
    "trader": "trader3",
@@ -18,15 +18,6 @@
    "entry_price": 0.06333255408308565,
    "trader_price": 0.12757376777177595,
    "opened": 1793069070.1036556
-  },
-  "4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz": {
-   "trader": "pointfarmcap",
-   "symbol": "GTA6",
-   "tokens": 228.83965176672385,
-   "cost_usd": 1.7141720230571562,
-   "entry_price": 0.007490712426029046,
-   "trader_price": 0.004592287424444218,
-   "opened": 1793109645.3138988
   },
   "8RNUw4N655VSrZKuhGdywhbSMDTrheguFPfxbpE2NZHQ": {
    "trader": "pointfarmcap",
@@ -1662,12 +1653,172 @@
    "proceeds": 0.052507932158592056,
    "pnl": -0.011170897847477136,
    "reason": "SELL"
+  },
+  {
+   "time": "2026-11-14 15:45:07",
+   "trader": "pointfarmcap",
+   "symbol": "GTA6",
+   "mint": "4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz",
+   "cost": 0.0980535749385938,
+   "proceeds": 0.08022394905112185,
+   "pnl": -0.01782962588747196,
+   "reason": "SELL"
+  },
+  {
+   "time": "2026-11-14 15:45:07",
+   "trader": "pointfarmcap",
+   "symbol": "GTA6",
+   "mint": "4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz",
+   "cost": 0.09934704231128581,
+   "proceeds": 0.0812822180705953,
+   "pnl": -0.018064824240690516,
+   "reason": "SELL"
+  },
+  {
+   "time": "2026-11-14 15:45:07",
+   "trader": "pointfarmcap",
+   "symbol": "GTA6",
+   "mint": "4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz",
+   "cost": 0.09854531828463263,
+   "proceeds": 0.08062627597457722,
+   "pnl": -0.017919042310055408,
+   "reason": "SELL"
+  },
+  {
+   "time": "2026-11-14 15:45:08",
+   "trader": "pointfarmcap",
+   "symbol": "GTA6",
+   "mint": "4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz",
+   "cost": 0.09862114742677185,
+   "proceeds": 0.08068831668282653,
+   "pnl": -0.01793283074394532,
+   "reason": "SELL"
+  },
+  {
+   "time": "2026-11-14 15:45:08",
+   "trader": "pointfarmcap",
+   "symbol": "GTA6",
+   "mint": "4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz",
+   "cost": 0.0980612846439718,
+   "proceeds": 0.08023025685796957,
+   "pnl": -0.017831027786002235,
+   "reason": "SELL"
+  },
+  {
+   "time": "2026-11-14 15:45:08",
+   "trader": "pointfarmcap",
+   "symbol": "GTA6",
+   "mint": "4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz",
+   "cost": 0.09757334885219285,
+   "proceeds": 0.07983104514004488,
+   "pnl": -0.017742303712147967,
+   "reason": "SELL"
+  },
+  {
+   "time": "2026-11-14 15:45:08",
+   "trader": "pointfarmcap",
+   "symbol": "GTA6",
+   "mint": "4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz",
+   "cost": 0.10353509358938029,
+   "proceeds": 0.08470873273431608,
+   "pnl": -0.018826360855064214,
+   "reason": "SELL"
+  },
+  {
+   "time": "2026-11-14 15:45:09",
+   "trader": "pointfarmcap",
+   "symbol": "GTA6",
+   "mint": "4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz",
+   "cost": 0.10397877595869394,
+   "proceeds": 0.08507173787526061,
+   "pnl": -0.01890703808343333,
+   "reason": "SELL"
+  },
+  {
+   "time": "2026-11-14 15:45:09",
+   "trader": "pointfarmcap",
+   "symbol": "GTA6",
+   "mint": "4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz",
+   "cost": 0.09717800108767154,
+   "proceeds": 0.07950758565436786,
+   "pnl": -0.01767041543330368,
+   "reason": "SELL"
+  },
+  {
+   "time": "2026-11-14 15:45:10",
+   "trader": "pointfarmcap",
+   "symbol": "GTA6",
+   "mint": "4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz",
+   "cost": 0.09592381171232472,
+   "proceeds": 0.07848145249592572,
+   "pnl": -0.017442359216399,
+   "reason": "SELL"
+  },
+  {
+   "time": "2026-11-14 15:45:10",
+   "trader": "pointfarmcap",
+   "symbol": "GTA6",
+   "mint": "4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz",
+   "cost": 0.23857277342546498,
+   "proceeds": 0.19519176156764628,
+   "pnl": -0.0433810118578187,
+   "reason": "SELL"
+  },
+  {
+   "time": "2026-11-14 15:45:10",
+   "trader": "pointfarmcap",
+   "symbol": "GTA6",
+   "mint": "4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz",
+   "cost": 0.09834429648931993,
+   "proceeds": 0.08046180708830328,
+   "pnl": -0.017882489401016652,
+   "reason": "SELL"
+  },
+  {
+   "time": "2026-11-14 15:45:10",
+   "trader": "pointfarmcap",
+   "symbol": "GTA6",
+   "mint": "4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz",
+   "cost": 0.0996741656563857,
+   "proceeds": 0.08154985876179052,
+   "pnl": -0.018124306894595182,
+   "reason": "SELL"
+  },
+  {
+   "time": "2026-11-14 15:45:10",
+   "trader": "pointfarmcap",
+   "symbol": "GTA6",
+   "mint": "4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz",
+   "cost": 0.09431770629652558,
+   "proceeds": 0.0771673941443716,
+   "pnl": -0.017150312152153985,
+   "reason": "SELL"
+  },
+  {
+   "time": "2026-11-14 15:45:10",
+   "trader": "pointfarmcap",
+   "symbol": "GTA6",
+   "mint": "4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz",
+   "cost": 0.09629264120500323,
+   "proceeds": 0.07878321567434858,
+   "pnl": -0.017509425530654654,
+   "reason": "SELL"
+  },
+  {
+   "time": "2026-11-14 15:45:10",
+   "trader": "pointfarmcap",
+   "symbol": "GTA6",
+   "mint": "4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz",
+   "cost": 0.09615304117893743,
+   "proceeds": 0.0786689998960289,
+   "pnl": -0.017484041282908536,
+   "reason": "SELL"
   }
  ],
  "last_sig": {
-  "CzU8MaRcwvwUoNkwJFLbvtFWJugcEXAhDDQqNFE4ybb7": "bv57TpKRUmTEvqoZpiLzfYqG1wfM2Vj2JQZ2UHkDQAEq684LYn6WPzwEbczApP6gadPprgeQBZwDbSVf3wkssnN",
-  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "2bcAsrDUQM7RP4izniqP4co9fdxx1FsWyNC2PTZfxn5LT5ywG6XtBnUboL114pvHFXqHbWp46uqAEJzwjtauvAg4",
-  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "3q2KR98Fo5CJAesC83gjNgVsRaHybwCtVYQQroPoP3vLYPmP7HrxdkZXN33HYENoNTHwZJYyiazogcRqQkDzDeWH"
+  "CzU8MaRcwvwUoNkwJFLbvtFWJugcEXAhDDQqNFE4ybb7": "51zZXEzA97W5dVoaVkTKnUD7UbPmqkC4byDBbfZwQqALv68fDnCtSFdzpZWSjREcS3CcMuP1fNSAs44Pc7Re8s3b",
+  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "4c7qBAKGhAFoQVGvRzxczvpPEonvaVm9KfjkGekaDSm6tCye24yRHq4CsiyPKeNESwf4BtCmYdHvtSNFNzBDHYih",
+  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "5JNLJcRW2AvgHbJKcFGPvGdjKPRhZFfhcSD9G1zATKbomTUhJWEzyCQoCp1c8cghgML8GKpyT2JnceyJXBM17G5D"
  },
  "wants": {}
 }
