@@ -1,5 +1,5 @@
 {
- "cash": 18.910735110309044,
+ "cash": 18.961802305994706,
  "positions": {
   "DKYcjobF7HPtL9RyQBRdeRQ2iWvizpfbgWwPWNXdpump": {
    "trader": "trader3",
@@ -22,8 +22,8 @@
   "4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz": {
    "trader": "pointfarmcap",
    "symbol": "GTA6",
-   "tokens": 470.1933586833526,
-   "cost_usd": 3.522083234525718,
+   "tokens": 463.2246288624899,
+   "cost_usd": 3.4698824834629427,
    "entry_price": 0.007490712426029046,
    "trader_price": 0.004592287424444218,
    "opened": 1793109645.3138988
@@ -1362,12 +1362,22 @@
    "proceeds": 0.05216380375619396,
    "pnl": -0.0038673033216861177,
    "reason": "SELL"
+  },
+  {
+   "time": "2026-11-14 03:48:31",
+   "trader": "pointfarmcap",
+   "symbol": "GTA6",
+   "mint": "4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz",
+   "cost": 0.05220075106277506,
+   "proceeds": 0.05106719568566175,
+   "pnl": -0.0011335553771133072,
+   "reason": "SELL"
   }
  ],
  "last_sig": {
-  "CzU8MaRcwvwUoNkwJFLbvtFWJugcEXAhDDQqNFE4ybb7": "cSBQmDUbmDhQHLdZZTtfh2WWR9HYL8KWHNu7DueA53hMWGWXtkmDuZVB6VEAtSGh8imnTE8D5dhgSsK1sWzeJCn",
-  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "m4w3gC4w7Yg6GEw1aZVMMwSGrfSnrjrSjYnSMmryNE4nsMXeEocmRxP8eViHBr5NatyXD6aPQTUCHoaJex9NrFJ",
-  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "3fem3K6SMHynRvYz6t9oryQNjNqM2WrBmK8ptTfwphWa5pMDcag2A9RzhizgZ6fNe1NasZqYfFwdq8dbcR7ZfAW2"
+  "CzU8MaRcwvwUoNkwJFLbvtFWJugcEXAhDDQqNFE4ybb7": "4CtgqkCHW1YTuaeiiiJj2dRrp8Rw4WhQHAcKxPFS9wzh39rYdYQQK1KD4ELewxvEw7J1anZ9b5obdtYpoyjEsFAY",
+  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "22yC2DAwrDLYHVXcw1jshv2J3KjYCZCdjxrsdZ4iBPLc6gGyb7qUFfjhFRuLiTzp7sSNUdL5eUAYFmPChhWhavkK",
+  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "3hkyHvydR52EUXN5oCRGBCu9h3VNShbPohG7ndsJ7uCBvefHD5dXYH8DzzRxbK6kcPwqAGSkq8NBtrLzp5QSxkgQ"
  },
  "wants": {}
 }
