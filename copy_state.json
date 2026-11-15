@@ -1,5 +1,5 @@
 {
- "cash": 21.932300705024304,
+ "cash": 13.932300705024304,
  "positions": {
   "DKYcjobF7HPtL9RyQBRdeRQ2iWvizpfbgWwPWNXdpump": {
    "trader": "trader3",
@@ -67,9 +67,9 @@
   "HcRLc9VDgjLeK154xDawfb1dmVJ98DoSqcwTHGqiDeJR": {
    "trader": "pointfarmcap",
    "symbol": "ZCAT",
-   "tokens": 162.56491307292842,
-   "cost_usd": 4.0,
-   "entry_price": 0.024359500000000003,
+   "tokens": 384.15916057579625,
+   "cost_usd": 8.0,
+   "entry_price": 0.02082470189701897,
    "trader_price": 0.024884609885126616,
    "opened": 1794358242.5971167
   },
@@ -81,6 +81,15 @@
    "entry_price": 0.00369873,
    "trader_price": 0.0037617115028965105,
    "opened": 1794421194.6770115
+  },
+  "8t5C4AWDg4CroMChxdo7rG2e8nJM31QG2GG7Czx9X7x2": {
+   "trader": "pointfarmcap",
+   "symbol": "SNDK",
+   "tokens": 6682.878835693998,
+   "cost_usd": 4.0,
+   "entry_price": 0.0005925590000000001,
+   "trader_price": 0.0006110415571253356,
+   "opened": 1794714823.8754761
   }
  },
  "closed": [
@@ -1817,8 +1826,37 @@
  ],
  "last_sig": {
   "CzU8MaRcwvwUoNkwJFLbvtFWJugcEXAhDDQqNFE4ybb7": "5KwF5Wy9UsZXVuzEyYwnHZn542BTk2kBE4nf8r7MCSZ1FTPb8QKsyn2YscU73imHbn6aFhSN1ebcQ9Voo6txEhSZ",
-  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "53W894UHbghGewrpsSJUjDiLLdiTJGD3FRPWNmyGHtHSD2DnShNBzv5AR8jMzzoKG8wMrRhrSfz1UMvqiZmRZJK9",
-  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "4uxRZ48sbFDqSATxp9jvJ7zAaYCXhNhY2FSgF4NS8jVZvgG41eX15nYtpT5LJzyJivzAGGq4rRpyiCjosfsJKGUj"
+  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "A8CjwE4P4VYiUrYG8fpYPqzDKDXaxDALffCz1VLLWoZ3hsFHYqEPk4Myqn2GBDf7DPs2Va7GSiprV11GgFVMVrT",
+  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "5ax5EXfk5cUQe9x8fYcsN2UmyCLEBRVYxPMU5MysDqeFvpVCq4FVw3P5uYTL2AnVVho3QC1A6KypUhTfpDXe4wsQ"
  },
- "wants": {}
+ "wants": {
+  "HcRLc9VDgjLeK154xDawfb1dmVJ98DoSqcwTHGqiDeJR": {
+   "trader": "pointfarmcap",
+   "cum": 4000.0,
+   "usd_sum": 4000.0,
+   "tok_sum": 212220.81944756606,
+   "since": 1794714714.1708796
+  },
+  "8t5C4AWDg4CroMChxdo7rG2e8nJM31QG2GG7Czx9X7x2": {
+   "trader": "pointfarmcap",
+   "cum": 2000.0,
+   "usd_sum": 2000.0,
+   "tok_sum": 3273099.802588,
+   "since": 1794714823.8294668
+  },
+  "6kNNgyrdvjkRC8eRGQqx5sLfZG2jTmg3NCFmkX2hYP4j": {
+   "trader": "pointfarmcap",
+   "cum": 2000.0,
+   "usd_sum": 2000.0,
+   "tok_sum": 3855676.509664,
+   "since": 1794714836.105595
+  },
+  "HgcxVs6kJhPAaGqnPNGaa7zYgNT49hJrLufiqcNMuYZT": {
+   "trader": "pointfarmcap",
+   "cum": 2000.0,
+   "usd_sum": 2000.0,
+   "tok_sum": 1914933.1757629998,
+   "since": 1794714836.1613588
+  }
+ }
 }
