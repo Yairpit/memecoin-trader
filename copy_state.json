@@ -1,5 +1,5 @@
 {
- "cash": 13.932300705024304,
+ "cash": 18.133991542895124,
  "positions": {
   "DKYcjobF7HPtL9RyQBRdeRQ2iWvizpfbgWwPWNXdpump": {
    "trader": "trader3",
@@ -72,24 +72,6 @@
    "entry_price": 0.02082470189701897,
    "trader_price": 0.024884609885126616,
    "opened": 1794358242.5971167
-  },
-  "5wsjHxT5nW5jQuVupXUNnYszF3WoWCfGGk9LMcsCJzY8": {
-   "trader": "pointfarmcap",
-   "symbol": "STANK",
-   "tokens": 1070.6377594471617,
-   "cost_usd": 4.0,
-   "entry_price": 0.00369873,
-   "trader_price": 0.0037617115028965105,
-   "opened": 1794421194.6770115
-  },
-  "8t5C4AWDg4CroMChxdo7rG2e8nJM31QG2GG7Czx9X7x2": {
-   "trader": "pointfarmcap",
-   "symbol": "SNDK",
-   "tokens": 6682.878835693998,
-   "cost_usd": 4.0,
-   "entry_price": 0.0005925590000000001,
-   "trader_price": 0.0006110415571253356,
-   "opened": 1794714823.8754761
   }
  },
  "closed": [
@@ -1822,12 +1804,32 @@
    "proceeds": 0.0786689998960289,
    "pnl": -0.017484041282908536,
    "reason": "SELL"
+  },
+  {
+   "time": "2026-11-17 15:06:16",
+   "trader": "pointfarmcap",
+   "symbol": "SNDK",
+   "mint": "8t5C4AWDg4CroMChxdo7rG2e8nJM31QG2GG7Czx9X7x2",
+   "cost": 4.0,
+   "proceeds": 3.1991579201395974,
+   "pnl": -0.8008420798604026,
+   "reason": "SELL"
+  },
+  {
+   "time": "2026-11-17 15:06:28",
+   "trader": "pointfarmcap",
+   "symbol": "STANK",
+   "mint": "5wsjHxT5nW5jQuVupXUNnYszF3WoWCfGGk9LMcsCJzY8",
+   "cost": 4.0,
+   "proceeds": 1.0025329177312212,
+   "pnl": -2.997467082268779,
+   "reason": "SELL"
   }
  ],
  "last_sig": {
-  "CzU8MaRcwvwUoNkwJFLbvtFWJugcEXAhDDQqNFE4ybb7": "37yAKroYzcCm5cjkoUy9dWYNxqsp6zh1ofXgu9QVLG3ZjZHrinzML6vKphWLJjj1npgW8FARMjQfHrczoeS1PFpZ",
-  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "2J4wUjiQUmPQDrVnU4QqnNjL11TikQu1cPY8GTLCy6YkRLjRPjwzYZhDRgKBfMgqLw67SpqRwh1FodJhd888kZ6T",
-  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "3NPkc8TxDjHbUNRNfd2UUfhjvW5fNNLzQ8pkd9Y19fMPPr7sdtrDRC3MYnjCpNX6iZ2YSXpz1k6DMMiu9XUyGEE4"
+  "CzU8MaRcwvwUoNkwJFLbvtFWJugcEXAhDDQqNFE4ybb7": "4XpqPfWKD4NJCvJa4rRNyXEkMWd3nY7WzTNeWFKYi3KRoMXJz333wYsjgvyg4QechUR2RzTMQwiqUTduPW3vRhXH",
+  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "53H7ze1fRQhQpKFtufqP39uvY2VvX8meq3pyD45yc5sGULeFwhHvrfyJ1amr88PLSEgRttDt34ZpZZmoJ5DoDQqd",
+  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "66ug7AtBZVrNdM1chg4SfASoPZa8J8CFstie6o3M4qkSMtTdKoYv5wkieJkniVjyM8XL5GactBdmX4RxXLnZzajS"
  },
  "wants": {}
 }
