@@ -1,15 +1,6 @@
 {
- "cash": 12.159415340629305,
+ "cash": 22.843886123300884,
  "positions": {
-  "DKYcjobF7HPtL9RyQBRdeRQ2iWvizpfbgWwPWNXdpump": {
-   "trader": "trader3",
-   "symbol": "DacityCoin",
-   "tokens": 7856.549576440568,
-   "cost_usd": 25.0,
-   "entry_price": 0.003182058454129468,
-   "trader_price": 0.0024994352962087176,
-   "opened": 1792846780.1379726
-  },
   "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx": {
    "trader": "pointfarmcap",
    "symbol": "STONK",
@@ -81,15 +72,6 @@
    "entry_price": 0.000827605,
    "trader_price": 0.0008877988328311728,
    "opened": 1794935188.0224135
-  },
-  "5D7qKXqUbTiqY8roVANV5DXqTdYDrbsmQCmyHGRBpump": {
-   "trader": "trader3",
-   "symbol": "Cheeky",
-   "tokens": 119140.38407730886,
-   "cost_usd": 4.0,
-   "entry_price": 3.32381e-05,
-   "trader_price": 8.666054275708426e-05,
-   "opened": 1795018617.2540917
   }
  },
  "closed": [
@@ -1952,20 +1934,32 @@
    "proceeds": 2.7120639250219534,
    "pnl": -1.2879360749780466,
    "reason": "SELL"
+  },
+  {
+   "time": "2026-11-18 17:04:44",
+   "trader": "trader3",
+   "symbol": "DacityCoin",
+   "mint": "DKYcjobF7HPtL9RyQBRdeRQ2iWvizpfbgWwPWNXdpump",
+   "cost": 25.0,
+   "proceeds": 7.021046225912919,
+   "pnl": -17.97895377408708,
+   "reason": "SELL"
+  },
+  {
+   "time": "2026-11-18 17:08:02",
+   "trader": "trader3",
+   "symbol": "Cheeky",
+   "mint": "5D7qKXqUbTiqY8roVANV5DXqTdYDrbsmQCmyHGRBpump",
+   "cost": 4.0,
+   "proceeds": 3.6634245567586596,
+   "pnl": -0.33657544324134037,
+   "reason": "SELL"
   }
  ],
  "last_sig": {
   "CzU8MaRcwvwUoNkwJFLbvtFWJugcEXAhDDQqNFE4ybb7": "aqvCg7vwiLzew9RyiB3pQew2UyVZSgwcEPhmKGwWU5rAywKM17SWWbNmXpWtnEAhHK4CN3cf8KZosqaS7rJ7Djn",
-  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "3T9hsCxAzYLesxS7zbukzaegZbRY7Jy2YHW81TJXfaJeYvVqNjEnmxHihV7Yd6BS6EfUHgqKk4Sz7nGSnLvyx5E7",
-  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "4bhp6knteBp7Pi9LVwHU25uen6qSpkF18E22eBgW9AMJfAWzePyjgenzfRdXFxTdKnzq62vBErcw4h6Ki21zpRuv"
+  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "3VaEwYdeSL2T9aXF5vvuRkATC93u3JPZ5o8HBdBLfYgrgv7BzVYNxo5GrQkAgR4as7Q5Z9QtAGynRziFjp9MStc7",
+  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "26QRGobi4h1Fuww2Wnevwfp8LTi1BYT86P59q9bEPaKZDqUncJfe46bedBfsLP72EaEH7xEuCj1dgBu66aGhCxTQ"
  },
- "wants": {
-  "5D7qKXqUbTiqY8roVANV5DXqTdYDrbsmQCmyHGRBpump": {
-   "trader": "trader3",
-   "cum": 1000.0,
-   "usd_sum": 1000.0,
-   "tok_sum": 11539276.909482,
-   "since": 1795006372.3077571
-  }
- }
+ "wants": {}
 }
