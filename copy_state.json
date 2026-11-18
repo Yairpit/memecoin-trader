@@ -1,5 +1,5 @@
 {
- "cash": 22.843886123300884,
+ "cash": 14.843886123300884,
  "positions": {
   "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx": {
    "trader": "pointfarmcap",
@@ -72,6 +72,15 @@
    "entry_price": 0.000827605,
    "trader_price": 0.0008877988328311728,
    "opened": 1794935188.0224135
+  },
+  "9hjBLBrc7WZW2H8UQvBAvG5WiTZotXUv2Bdcn4f4pump": {
+   "trader": "trader3",
+   "symbol": "DCTY",
+   "tokens": 498.65890975029276,
+   "cost_usd": 8.0,
+   "entry_price": 0.0158826,
+   "trader_price": 0.015491847494895527,
+   "opened": 1795038636.5882795
   }
  },
  "closed": [
@@ -1959,7 +1968,15 @@
  "last_sig": {
   "CzU8MaRcwvwUoNkwJFLbvtFWJugcEXAhDDQqNFE4ybb7": "aqvCg7vwiLzew9RyiB3pQew2UyVZSgwcEPhmKGwWU5rAywKM17SWWbNmXpWtnEAhHK4CN3cf8KZosqaS7rJ7Djn",
   "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "3VaEwYdeSL2T9aXF5vvuRkATC93u3JPZ5o8HBdBLfYgrgv7BzVYNxo5GrQkAgR4as7Q5Z9QtAGynRziFjp9MStc7",
-  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "26QRGobi4h1Fuww2Wnevwfp8LTi1BYT86P59q9bEPaKZDqUncJfe46bedBfsLP72EaEH7xEuCj1dgBu66aGhCxTQ"
+  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "47Y8RiyQ2sEBMCroGdadHztLb4TMTGpWa6b3VEs7dqqU96n5G3nMiMsB4dCCQVrJTbWBTX7Yz2HS9SaECfFy8wAE"
  },
- "wants": {}
+ "wants": {
+  "9hjBLBrc7WZW2H8UQvBAvG5WiTZotXUv2Bdcn4f4pump": {
+   "trader": "trader3",
+   "cum": 6000.0,
+   "usd_sum": 6000.0,
+   "tok_sum": 387300.481881,
+   "since": 1795038636.4974287
+  }
+ }
 }

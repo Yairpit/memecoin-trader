@@ -227,3 +227,4 @@ time,trader,event,mint,symbol,usd,price,trader_price,slip_vs_trader_pct,pnl_usd,
 2026-11-18 16:16:57,trader3,BUY,5D7qKXqUbTiqY8roVANV5DXqTdYDrbsmQCmyHGRBpump,Cheeky,4.0,3.32381e-05,8.666054275708426e-05,-61.65,,
 2026-11-18 17:04:44,trader3,SELL,DKYcjobF7HPtL9RyQBRdeRQ2iWvizpfbgWwPWNXdpump,DacityCoin,7.021,0.0009026819999999999,,,-17.979,-71.92
 2026-11-18 17:08:02,trader3,SELL,5D7qKXqUbTiqY8roVANV5DXqTdYDrbsmQCmyHGRBpump,Cheeky,3.6634,3.10594e-05,,,-0.3366,-8.41
+2026-11-18 21:50:36,trader3,BUY,9hjBLBrc7WZW2H8UQvBAvG5WiTZotXUv2Bdcn4f4pump,DCTY,8.0,0.0158826,0.015491847494895527,2.52,,
