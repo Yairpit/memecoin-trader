@@ -1,5 +1,5 @@
 {
- "cash": 13.447351415607352,
+ "cash": 12.159415340629305,
  "positions": {
   "DKYcjobF7HPtL9RyQBRdeRQ2iWvizpfbgWwPWNXdpump": {
    "trader": "trader3",
@@ -82,14 +82,14 @@
    "trader_price": 0.0008877988328311728,
    "opened": 1794935188.0224135
   },
-  "3XiwhhcYJfyZPBT4tbDZ9hom8wwMTEM3d2YJwxLwAwYC": {
-   "trader": "pointfarmcap",
-   "symbol": "MEOWL",
-   "tokens": 16249.620431845973,
+  "5D7qKXqUbTiqY8roVANV5DXqTdYDrbsmQCmyHGRBpump": {
+   "trader": "trader3",
+   "symbol": "Cheeky",
+   "tokens": 119140.38407730886,
    "cost_usd": 4.0,
-   "entry_price": 0.000243698,
-   "trader_price": 0.00027702733154529876,
-   "opened": 1794935929.8534591
+   "entry_price": 3.32381e-05,
+   "trader_price": 8.666054275708426e-05,
+   "opened": 1795018617.2540917
   }
  },
  "closed": [
@@ -1942,12 +1942,22 @@
    "proceeds": 0.11037438176460979,
    "pnl": 0.027184691236808306,
    "reason": "SELL"
+  },
+  {
+   "time": "2026-11-18 16:16:57",
+   "trader": "pointfarmcap",
+   "symbol": "MEOWL",
+   "mint": "3XiwhhcYJfyZPBT4tbDZ9hom8wwMTEM3d2YJwxLwAwYC",
+   "cost": 4.0,
+   "proceeds": 2.7120639250219534,
+   "pnl": -1.2879360749780466,
+   "reason": "SELL"
   }
  ],
  "last_sig": {
-  "CzU8MaRcwvwUoNkwJFLbvtFWJugcEXAhDDQqNFE4ybb7": "3UPtUyVzQsdCRWXEFqBEvT8oWRkHpBPjeF1Nri5HZ7VunjHu1xqZYYij5572D8C18QP7T5PHriSnJFv8uQoDW8UX",
-  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "4NZ4itYVuWjG3Gnk1WwQ366taGviVUfK9zMJuQMm7TSc4as3giEeS6bQaX5fbFAFJYQFAzuN7tSMmEjDL3iKqCKn",
-  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "5o9dfzz2bEzX4yMY3dhVPDTua47Abn8HxXQGQKUzKArSWSEobLSymQEwzmvT4Bv4ptQpo7HfHFZJbnqS33Ga7m9d"
+  "CzU8MaRcwvwUoNkwJFLbvtFWJugcEXAhDDQqNFE4ybb7": "aqvCg7vwiLzew9RyiB3pQew2UyVZSgwcEPhmKGwWU5rAywKM17SWWbNmXpWtnEAhHK4CN3cf8KZosqaS7rJ7Djn",
+  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "3T9hsCxAzYLesxS7zbukzaegZbRY7Jy2YHW81TJXfaJeYvVqNjEnmxHihV7Yd6BS6EfUHgqKk4Sz7nGSnLvyx5E7",
+  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "4bhp6knteBp7Pi9LVwHU25uen6qSpkF18E22eBgW9AMJfAWzePyjgenzfRdXFxTdKnzq62vBErcw4h6Ki21zpRuv"
  },
  "wants": {
   "5D7qKXqUbTiqY8roVANV5DXqTdYDrbsmQCmyHGRBpump": {
