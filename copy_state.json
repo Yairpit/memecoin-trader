@@ -1,5 +1,5 @@
 {
- "cash": 10.935259394988119,
+ "cash": 12.425942010368107,
  "positions": {
   "DKYcjobF7HPtL9RyQBRdeRQ2iWvizpfbgWwPWNXdpump": {
    "trader": "trader3",
@@ -22,8 +22,8 @@
   "8RNUw4N655VSrZKuhGdywhbSMDTrheguFPfxbpE2NZHQ": {
    "trader": "pointfarmcap",
    "symbol": "PURR",
-   "tokens": 2753.9020997204775,
-   "cost_usd": 3.870845847297006,
+   "tokens": 2601.7859952384915,
+   "cost_usd": 3.657033601973957,
    "entry_price": 0.00139153,
    "trader_price": 0.0014472271108322528,
    "opened": 1793154455.9803402
@@ -67,8 +67,8 @@
   "HcRLc9VDgjLeK154xDawfb1dmVJ98DoSqcwTHGqiDeJR": {
    "trader": "pointfarmcap",
    "symbol": "ZCAT",
-   "tokens": 359.7832853600926,
-   "cost_usd": 7.492379665154037,
+   "tokens": 308.4059644739767,
+   "cost_usd": 6.422462273433188,
    "entry_price": 0.02082470189701897,
    "trader_price": 0.024884609885126616,
    "opened": 1794358242.5971167
@@ -1862,12 +1862,67 @@
    "proceeds": 0.5800540305876855,
    "pnl": 0.07243369574172309,
    "reason": "SELL"
+  },
+  {
+   "time": "2026-11-18 01:56:16",
+   "trader": "pointfarmcap",
+   "symbol": "PURR",
+   "mint": "8RNUw4N655VSrZKuhGdywhbSMDTrheguFPfxbpE2NZHQ",
+   "cost": 0.13918920061501117,
+   "proceeds": 0.22023870533773524,
+   "pnl": 0.08104950472272407,
+   "reason": "SELL"
+  },
+  {
+   "time": "2026-11-18 01:56:29",
+   "trader": "pointfarmcap",
+   "symbol": "ZCAT",
+   "mint": "HcRLc9VDgjLeK154xDawfb1dmVJ98DoSqcwTHGqiDeJR",
+   "cost": 0.5297450488322465,
+   "proceeds": 0.57993024173244,
+   "pnl": 0.05018519290019352,
+   "reason": "SELL"
+  },
+  {
+   "time": "2026-11-18 02:31:07",
+   "trader": "pointfarmcap",
+   "symbol": "ZCAT",
+   "mint": "HcRLc9VDgjLeK154xDawfb1dmVJ98DoSqcwTHGqiDeJR",
+   "cost": 0.5401723428886025,
+   "proceeds": 0.5801362033964912,
+   "pnl": 0.03996386050788869,
+   "reason": "SELL"
+  },
+  {
+   "time": "2026-11-18 02:31:08",
+   "trader": "pointfarmcap",
+   "symbol": "PURR",
+   "mint": "8RNUw4N655VSrZKuhGdywhbSMDTrheguFPfxbpE2NZHQ",
+   "cost": 0.07462304470803767,
+   "proceeds": 0.11037746491332283,
+   "pnl": 0.03575442020528516,
+   "reason": "SELL"
   }
  ],
  "last_sig": {
   "CzU8MaRcwvwUoNkwJFLbvtFWJugcEXAhDDQqNFE4ybb7": "5Wi7uk4PkcR6xViG8vMiCq8fF5UdszhDHwySnC2Ho8MAfTfLR88SsdfDBHgSLHgwpGDdwKAsseWYREc548fY8jK6",
-  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "5MT36Us3mg4sfy6TBtjUWcv8GXbkguRSFCng8wWAyY5FBSypZ73AcASSbcJz2GCq4FstHrYemYp3i8cgACEDVRd7",
-  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "2NoyAixGWBwUDpqjDzAjrFj1BTRgbwc6btbkAcmMksbWemqHNe6fsKbGivdnGHxi1UU4TiHLU4nFVdvrc6FhnXWu"
+  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "4GUgp7XYdAqUwVbqvZ2YQvujcuXutS7YbVAcc3kFR2TJcM2oQfdmuawMHkBGULzEkNVYppeL13Sz7daAdGv6im2A",
+  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "Agc1z6FZM3kiruKpq9Gc1sNV1j98eNYTiBkt58miT6xBficBP2bE5oJrzNPUCT4YFvrKqJ229FKnFXc4hi6bPn3"
  },
- "wants": {}
+ "wants": {
+  "Bdmz1BAj5B2YbYVdMyZexWbjX33kfhNonHGDtQjipump": {
+   "trader": "trader3",
+   "cum": 3950.0,
+   "usd_sum": 3950.0,
+   "tok_sum": 32920950.589315,
+   "since": 1794968903.6925905
+  },
+  "AKotzk1dhcNangAJBtvNKtT9bhbSVZc2mMhRFgkFpump": {
+   "trader": "trader3",
+   "cum": 2499.999999999999,
+   "usd_sum": 2499.999999999999,
+   "tok_sum": 1004379.6136,
+   "since": 1794968940.924892
+  }
+ }
 }
