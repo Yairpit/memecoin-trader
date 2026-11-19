@@ -1966,9 +1966,17 @@
   }
  ],
  "last_sig": {
-  "CzU8MaRcwvwUoNkwJFLbvtFWJugcEXAhDDQqNFE4ybb7": "2QbGkeLMkLofSS3PuY32NP3BQbAYr8GFpUjY8162NoYjXuQwTckvrdUWpo5uWpqC345h96psFEyvrQkmHb1jDzES",
+  "CzU8MaRcwvwUoNkwJFLbvtFWJugcEXAhDDQqNFE4ybb7": "2isdmz7fZnPZ5TezSUzYMyQ7o2U9M7yEXdA2gXRK38vgqEhBesyTwxMZcyXZPKohDnfzLYpTPsv9hQhu4tJVDbfi",
   "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "5uZ9RfxYrgMjAFM4uSgafTTzH9qfgkoCA4gpjeHgczaqRSiSidu4EbnZUKCCA8BCh337EfGvi1Yx8YGYSb8LVCaG",
-  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "5ad1vKuqZkPQHMBJfxK1r1r35J6GDxti25TyaB8UvxRLMrHebZB8EEB4T2fSYamLH2gXjNKT7RTYdN6hUkesX2y7"
+  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "xxepgagtG2jZV2oWLBaUo6Sr44McPUUnyni87faTbsxr889cDDTy3N6dzVPYed4xUuqqianMpNAjXnotMyrUFZ4"
  },
- "wants": {}
+ "wants": {
+  "9hjBLBrc7WZW2H8UQvBAvG5WiTZotXUv2Bdcn4f4pump": {
+   "trader": "trader3",
+   "cum": 7500.0,
+   "usd_sum": 7500.0,
+   "tok_sum": 363990.94293000014,
+   "since": 1795096145.360066
+  }
+ }
 }
