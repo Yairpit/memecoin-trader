@@ -1968,15 +1968,7 @@
  "last_sig": {
   "CzU8MaRcwvwUoNkwJFLbvtFWJugcEXAhDDQqNFE4ybb7": "26TwtxXYyLtuM2xS7unneTqyor8WMYxgBnsDCTcg1wVEbZmH5y8aH4rH7Y7JdAdSSgrX7DZZM8JyqCRSXduQ3JLM",
   "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "64TtJurPCRGZHfvT9vXcQhYTViw4mYqqqpe5HZNsfXRV2EHBv9PpmPXUiShMEArPCfmxfH4w26uG3yfXmG6BW9bd",
-  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "2vapDAS5YGWPxbQjzhX3JgtZyiwYxEFRp6po3s1QsFpRZgjbcSpaBj5DvgxUnfsxZB7y3Sn5YddnowEcBNVwnSFq"
+  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "nyT4W9S8KzbwXRZzivC6kn9twSeQNPUoR7b3Pne373gFPnGMtTaiJR5Vn78CSofgduivHmYG7KkJuuHhzJAQm8u"
  },
- "wants": {
-  "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx": {
-   "trader": "pointfarmcap",
-   "cum": 1999.9999999999998,
-   "usd_sum": 1999.9999999999998,
-   "tok_sum": 49166.469910785556,
-   "since": 1795106886.2572408
-  }
- }
+ "wants": {}
 }
