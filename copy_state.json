@@ -1991,13 +1991,5 @@
   "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "3MWzEq54dSad8WtYzsTXiNcd9Me7hEccrufW5bP7Laad5siXcjWWimmfNFNBnMBep8qq2CGXF1kL6sAPC39fwJc",
   "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "21tBGAA4E6wQUahYGdUPVMbakbvQq5wZZ5PWRTyaZqP89DHLK1eyKg6JGgcdZCq1do9qZctS4BWhjxVhWmXBfZMu"
  },
- "wants": {
-  "98sMhvDwXj1RQi5c5Mndm3vPe9cBqPrbLaufMXFNMh5g": {
-   "trader": "trader3",
-   "cum": 6000.0,
-   "usd_sum": 6000.0,
-   "tok_sum": 105.468174145,
-   "since": 1795234623.0119598
-  }
- }
+ "wants": {}
 }
