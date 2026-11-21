@@ -1,5 +1,5 @@
 {
- "cash": 129821.38281597717,
+ "cash": 129813.38281597717,
  "positions": {
   "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx": {
    "trader": "pointfarmcap",
@@ -63,6 +63,15 @@
    "entry_price": 0.02082470189701897,
    "trader_price": 0.024884609885126616,
    "opened": 1794358242.5971167
+  },
+  "98sMhvDwXj1RQi5c5Mndm3vPe9cBqPrbLaufMXFNMh5g": {
+   "trader": "trader3",
+   "symbol": "HYPE",
+   "tokens": 0.13686935543519962,
+   "cost_usd": 8.0,
+   "entry_price": 57.8654,
+   "trader_price": 56.889199501558316,
+   "opened": 1795234623.0478578
   }
  },
  "closed": [
@@ -1980,7 +1989,15 @@
  "last_sig": {
   "CzU8MaRcwvwUoNkwJFLbvtFWJugcEXAhDDQqNFE4ybb7": "4vKQFeTDDW9UdmuKNFuZG93juwo9WUtnKGgy4n2tsyQeH3NyfgS7CVXDmUifY18JLtDBR2rza8cxaHXfdG8pqHFJ",
   "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "3MWzEq54dSad8WtYzsTXiNcd9Me7hEccrufW5bP7Laad5siXcjWWimmfNFNBnMBep8qq2CGXF1kL6sAPC39fwJc",
-  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "kZ2vSehMJqbd59fdZ2ihWeqEsEyvCeaZTCuJqPKwBP5tYgQvxztFStiViaFH3YcPz9MAKbQZS9EcVi9GzSfmNR9"
+  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "21tBGAA4E6wQUahYGdUPVMbakbvQq5wZZ5PWRTyaZqP89DHLK1eyKg6JGgcdZCq1do9qZctS4BWhjxVhWmXBfZMu"
  },
- "wants": {}
+ "wants": {
+  "98sMhvDwXj1RQi5c5Mndm3vPe9cBqPrbLaufMXFNMh5g": {
+   "trader": "trader3",
+   "cum": 6000.0,
+   "usd_sum": 6000.0,
+   "tok_sum": 105.468174145,
+   "since": 1795234623.0119598
+  }
+ }
 }
