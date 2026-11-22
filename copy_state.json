@@ -2000,27 +2000,5 @@
   "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "5kypJRBBrCSygwpwXRqJSBxSCRwSAB5GSjwySmE94nAkukEdUHX3oxicqTH9paXSwBc4xMEtmLbL5nKohzWt4rL",
   "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "4eFSWXW8CpjXTqi74mGFoeE6khGUVrGUnBsV6qpyAX8jm86qghSLPc5rtEyVmNFPttKfwwjZgFFTkhdfhy9T6G7a"
  },
- "wants": {
-  "2g23GpSneyx7Uqb25YKA6i66m8f1VDYwpGCVGXhdwK8h": {
-   "trader": "pointfarmcap",
-   "cum": 1000.0,
-   "usd_sum": 1000.0,
-   "tok_sum": 2411249.7832159996,
-   "since": 1795306674.8947897
-  },
-  "HcRLc9VDgjLeK154xDawfb1dmVJ98DoSqcwTHGqiDeJR": {
-   "trader": "pointfarmcap",
-   "cum": 2000.0,
-   "usd_sum": 2000.0,
-   "tok_sum": 110685.02870657691,
-   "since": 1795307934.563083
-  },
-  "8RNUw4N655VSrZKuhGdywhbSMDTrheguFPfxbpE2NZHQ": {
-   "trader": "pointfarmcap",
-   "cum": 2000.0,
-   "usd_sum": 2000.0,
-   "tok_sum": 998551.3386594728,
-   "since": 1795308107.2348597
-  }
- }
+ "wants": {}
 }
