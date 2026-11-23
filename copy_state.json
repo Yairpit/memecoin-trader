@@ -1,5 +1,5 @@
 {
- "cash": 129808.84042842565,
+ "cash": 129809.12281809686,
  "positions": {
   "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx": {
    "trader": "pointfarmcap",
@@ -67,8 +67,8 @@
   "2g23GpSneyx7Uqb25YKA6i66m8f1VDYwpGCVGXhdwK8h": {
    "trader": "pointfarmcap",
    "symbol": "BINKY",
-   "tokens": 4026.3988349113733,
-   "cost_usd": 1.4075314230162905,
+   "tokens": 3261.383056278381,
+   "cost_usd": 1.140100452643254,
    "entry_price": 0.00034607999999999997,
    "trader_price": 0.0004147226915107285,
    "opened": 1795306674.998187
@@ -2112,12 +2112,32 @@
    "proceeds": 0.16828088320172616,
    "pnl": 0.011888502866680695,
    "reason": "SELL"
+  },
+  {
+   "time": "2026-11-23 15:54:22",
+   "trader": "pointfarmcap",
+   "symbol": "BINKY",
+   "mint": "2g23GpSneyx7Uqb25YKA6i66m8f1VDYwpGCVGXhdwK8h",
+   "cost": 0.14075314230159147,
+   "proceeds": 0.1471609234923155,
+   "pnl": 0.006407781190724021,
+   "reason": "SELL"
+  },
+  {
+   "time": "2026-11-23 16:36:24",
+   "trader": "pointfarmcap",
+   "symbol": "BINKY",
+   "mint": "2g23GpSneyx7Uqb25YKA6i66m8f1VDYwpGCVGXhdwK8h",
+   "cost": 0.12667782807144484,
+   "proceeds": 0.13522874771993568,
+   "pnl": 0.008550919648490835,
+   "reason": "SELL"
   }
  ],
  "last_sig": {
-  "CzU8MaRcwvwUoNkwJFLbvtFWJugcEXAhDDQqNFE4ybb7": "4oLjWttpazLTfiXMnnUrBZu95txiQ45uhah3Tk4nbjqhfvACWWpEMr8X2RQC4QzygPumaYzZxZFgENxVRPdywHHx",
-  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "4VxrU7jmAp8AXcL52u9iTeXGD8SvZXdFxyko4RXHCC5keZCYMvkz8BsfKKUvfHbGUPWr7kBRoHCMMhV91JzjDDJT",
-  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "47DV9RRZNzCbs9Ppn7iUrdLfEkCxnNLNBCp1LXPPM4ejFLPQNsyMy6t3iCMf9XSvRxBZYUono8d9iBLykDtbCgiC"
+  "CzU8MaRcwvwUoNkwJFLbvtFWJugcEXAhDDQqNFE4ybb7": "3PUkCQiL9HL9yQWsmRkLDbkQTWynZZvPWMHF4pR5Gjyq18Jb9ZwVAaNoESu5yC8LupsasEZQbnMQWRKAff8Ngorv",
+  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "2aZqoXaYDytxZtwJJqDYJaFm4UgbTvrreGHiJji1JKL6MJfs2MUmJe7J59Z6WuwsiKmficT9otCjKrwrooja3ZVA",
+  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "2FBUZDpVojMN8bPAbu9P5MK9BVYUEtUKvfgPLTuCjLZxMzCxLqniztWNcgqrDuZjr1gPvZJZw5H5npT4KrVH6cGv"
  },
  "wants": {
   "9scVbbC7HUwXaBmo8bnYfm2Pa5oouZpjy2NvrvwLpump": {
