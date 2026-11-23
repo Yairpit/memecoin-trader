@@ -1,5 +1,5 @@
 {
- "cash": 129819.49199738303,
+ "cash": 129820.51915624224,
  "positions": {
   "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx": {
    "trader": "pointfarmcap",
@@ -67,8 +67,8 @@
   "2g23GpSneyx7Uqb25YKA6i66m8f1VDYwpGCVGXhdwK8h": {
    "trader": "pointfarmcap",
    "symbol": "BINKY",
-   "tokens": 8341.53952843305,
-   "cost_usd": 2.9160000000001105,
+   "tokens": 4970.862759149333,
+   "cost_usd": 1.7376931148347483,
    "entry_price": 0.00034607999999999997,
    "trader_price": 0.0004147226915107285,
    "opened": 1795306674.998187
@@ -2054,12 +2054,32 @@
    "proceeds": 0.30163532451793795,
    "pnl": -0.022364675481962526,
    "reason": "SELL"
+  },
+  {
+   "time": "2026-11-23 02:56:31",
+   "trader": "pointfarmcap",
+   "symbol": "BINKY",
+   "mint": "2g23GpSneyx7Uqb25YKA6i66m8f1VDYwpGCVGXhdwK8h",
+   "cost": 0.7675086176216315,
+   "proceeds": 0.6915486303774463,
+   "pnl": -0.07595998724418518,
+   "reason": "SELL"
+  },
+  {
+   "time": "2026-11-23 03:23:58",
+   "trader": "pointfarmcap",
+   "symbol": "BINKY",
+   "mint": "2g23GpSneyx7Uqb25YKA6i66m8f1VDYwpGCVGXhdwK8h",
+   "cost": 0.41079826754373067,
+   "proceeds": 0.3356102288437736,
+   "pnl": -0.07518803869995705,
+   "reason": "SELL"
   }
  ],
  "last_sig": {
   "CzU8MaRcwvwUoNkwJFLbvtFWJugcEXAhDDQqNFE4ybb7": "5QiE74eDrctPMmxDbhDM9Me4t51qaFnVT5tVg4waVgABiKWgxf4VGaWyNGcDzst7di1KM7PsBHpVcCnRmyPKSi7e",
-  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "2ajHgNTZs1W6SnadVfCuQHFkBb239MM5N3RoHGiZHDWK9jBiWx2crM35x2LhSUvJKdCmK5VBMUYuCBSW6oD9SByF",
-  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "5HshMgECea2iLAAqkcVAztjXG8TQtG3BzuRZJTs4g4rUgwkuVTYdtHqXNTMvW4TSAyXKKvYRVjAXtFVjsctBn4ZU"
+  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "47TmjicnzY2XadY2HbhZEuN9y2fYD399jL1epw9YcjC1URQ7QtcTA2CHvMCfcdVf63fgTvGSHM4VgdmH2RAXygSZ",
+  "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "4Z7J8A4ydLHyxQsKeX2H9qXW9MvhsN1ME3JTQr92UkmyoCMc2Ky2wUkcZjnthFTcDmnm6SC9bQRFd3snDTFXqTWh"
  },
  "wants": {
   "HcRLc9VDgjLeK154xDawfb1dmVJ98DoSqcwTHGqiDeJR": {
