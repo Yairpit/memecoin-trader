@@ -1,5 +1,5 @@
 {
- "cash": 129818.4215726274,
+ "cash": 129819.1903620585,
  "positions": {
   "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx": {
    "trader": "pointfarmcap",
@@ -58,8 +58,8 @@
   "HcRLc9VDgjLeK154xDawfb1dmVJ98DoSqcwTHGqiDeJR": {
    "trader": "pointfarmcap",
    "symbol": "ZCAT",
-   "tokens": 281.9896497594256,
-   "cost_usd": 5.872350394284826,
+   "tokens": 258.3362428216117,
+   "cost_usd": 5.379775245955971,
    "entry_price": 0.02082470189701897,
    "trader_price": 0.024884609885126616,
    "opened": 1794358242.5971167
@@ -67,8 +67,8 @@
   "2g23GpSneyx7Uqb25YKA6i66m8f1VDYwpGCVGXhdwK8h": {
    "trader": "pointfarmcap",
    "symbol": "BINKY",
-   "tokens": 10298.196948682422,
-   "cost_usd": 3.600000000000012,
+   "tokens": 9268.37725381418,
+   "cost_usd": 3.240000000000011,
    "entry_price": 0.00034607999999999997,
    "trader_price": 0.0004147226915107285,
    "opened": 1795306674.998187
@@ -2024,11 +2024,31 @@
    "proceeds": 0.11101486821969521,
    "pnl": 0.03429538968957728,
    "reason": "SELL"
+  },
+  {
+   "time": "2026-11-23 01:10:09",
+   "trader": "pointfarmcap",
+   "symbol": "BINKY",
+   "mint": "2g23GpSneyx7Uqb25YKA6i66m8f1VDYwpGCVGXhdwK8h",
+   "cost": 0.3600000000000012,
+   "proceeds": 0.3510722278086004,
+   "pnl": -0.008927772191400785,
+   "reason": "SELL"
+  },
+  {
+   "time": "2026-11-23 01:32:21",
+   "trader": "pointfarmcap",
+   "symbol": "ZCAT",
+   "mint": "HcRLc9VDgjLeK154xDawfb1dmVJ98DoSqcwTHGqiDeJR",
+   "cost": 0.4925751483288552,
+   "proceeds": 0.41771720328901785,
+   "pnl": -0.07485794503983734,
+   "reason": "SELL"
   }
  ],
  "last_sig": {
   "CzU8MaRcwvwUoNkwJFLbvtFWJugcEXAhDDQqNFE4ybb7": "5QiE74eDrctPMmxDbhDM9Me4t51qaFnVT5tVg4waVgABiKWgxf4VGaWyNGcDzst7di1KM7PsBHpVcCnRmyPKSi7e",
-  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "3HjKNi8ftyXTDFZuZVDbGrCcvwhCkZRR4pKXp3z8oazqyNLFvsoxURkT85eNcn2Z9cXvRbB1PPdanGf2PuNVvwUn",
+  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "2J3SnEHPteVHT6J2xq52Sm3FcX7hYBuBHaY8UKVDLmnzKirh8eAwNeLUB2hCDKdH9Sg3sHfgU8EryqeNuA4D1dPQ",
   "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "5HshMgECea2iLAAqkcVAztjXG8TQtG3BzuRZJTs4g4rUgwkuVTYdtHqXNTMvW4TSAyXKKvYRVjAXtFVjsctBn4ZU"
  },
  "wants": {
