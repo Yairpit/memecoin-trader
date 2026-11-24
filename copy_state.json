@@ -1,5 +1,5 @@
 {
- "cash": 129810.5411705593,
+ "cash": 129810.84631413658,
  "positions": {
   "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx": {
    "trader": "pointfarmcap",
@@ -13,8 +13,8 @@
   "8RNUw4N655VSrZKuhGdywhbSMDTrheguFPfxbpE2NZHQ": {
    "trader": "pointfarmcap",
    "symbol": "PURR",
-   "tokens": 2266.055883020603,
-   "cost_usd": 3.1851361039390493,
+   "tokens": 2214.065356545377,
+   "cost_usd": 3.112058955145039,
    "entry_price": 0.00139153,
    "trader_price": 0.0014472271108322528,
    "opened": 1793154455.9803402
@@ -67,8 +67,8 @@
   "2g23GpSneyx7Uqb25YKA6i66m8f1VDYwpGCVGXhdwK8h": {
    "trader": "pointfarmcap",
    "symbol": "BINKY",
-   "tokens": 3261.383056278381,
-   "cost_usd": 1.140100452643254,
+   "tokens": 2446.037292209141,
+   "cost_usd": 0.8550753394825648,
    "entry_price": 0.00034607999999999997,
    "trader_price": 0.0004147226915107285,
    "opened": 1795306674.998187
@@ -2133,11 +2133,31 @@
    "proceeds": 1.418352462436184,
    "pnl": -6.581647537563816,
    "reason": "SELL"
+  },
+  {
+   "time": "2026-11-24 00:35:23",
+   "trader": "pointfarmcap",
+   "symbol": "BINKY",
+   "mint": "2g23GpSneyx7Uqb25YKA6i66m8f1VDYwpGCVGXhdwK8h",
+   "cost": 0.28502511316068935,
+   "proceeds": 0.20114667241584905,
+   "pnl": -0.0838784407448403,
+   "reason": "SELL"
+  },
+  {
+   "time": "2026-11-24 01:12:18",
+   "trader": "pointfarmcap",
+   "symbol": "PURR",
+   "mint": "8RNUw4N655VSrZKuhGdywhbSMDTrheguFPfxbpE2NZHQ",
+   "cost": 0.07307714879401044,
+   "proceeds": 0.10399690486197301,
+   "pnl": 0.030919756067962573,
+   "reason": "SELL"
   }
  ],
  "last_sig": {
   "CzU8MaRcwvwUoNkwJFLbvtFWJugcEXAhDDQqNFE4ybb7": "4Hig8G3AabdaWo2TS3FP77USiVVF3ofhFLLWkF9XphJ2yVPA8K4h4mdRyPm6MSzptCUwnd5QM5rdtEGGpVFr3zFr",
-  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "2fEjhu1diCAnMa8wtT9NFaiBHf4nsdCZcCWUEqAQFBmKRkAa9meNycXf5x31aW82WNcrZX5WiqqA9ohBf6ZXFP89",
+  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "29LTRHyEFv4DBymDaRGZSKMBao13HHDFoPMStHYNjssB3yxtT9kkq9v1SEHC7vTA5cgssn4i7K5Mhb76xV2yBJVM",
   "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "5U1dxikUuvZqT1BRNytC4TsPJEZA7XXZ7KkksaE6ujn3EhMCS6SFTKc7CDX9iDqVArJVUTSy7UZ7UrcrvT1p83jt"
  },
  "wants": {}
