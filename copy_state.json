@@ -1,5 +1,5 @@
 {
- "cash": 129803.33593313592,
+ "cash": 129803.45429174593,
  "positions": {
   "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx": {
    "trader": "pointfarmcap",
@@ -13,8 +13,8 @@
   "8RNUw4N655VSrZKuhGdywhbSMDTrheguFPfxbpE2NZHQ": {
    "trader": "pointfarmcap",
    "symbol": "PURR",
-   "tokens": 493.7285842610795,
-   "cost_usd": 0.6939779160169892,
+   "tokens": 400.21439411756717,
+   "cost_usd": 0.5625356927741594,
    "entry_price": 0.00139153,
    "trader_price": 0.0014472271108322528,
    "opened": 1793154455.9803402
@@ -2442,11 +2442,21 @@
    "proceeds": 0.11553754474702664,
    "pnl": 0.00150405019036845,
    "reason": "SELL"
+  },
+  {
+   "time": "2026-11-27 16:12:38",
+   "trader": "pointfarmcap",
+   "symbol": "PURR",
+   "mint": "8RNUw4N655VSrZKuhGdywhbSMDTrheguFPfxbpE2NZHQ",
+   "cost": 0.1314422232428299,
+   "proceeds": 0.11835861001556602,
+   "pnl": -0.013083613227263868,
+   "reason": "SELL"
   }
  ],
  "last_sig": {
   "CzU8MaRcwvwUoNkwJFLbvtFWJugcEXAhDDQqNFE4ybb7": "4gqpYSoYX4RKk66PJzvEkMbFSvSD7MTQzUx8AJ48dg9vKZAGqJLrSPZ8X5etpFem2w1ruSfk3QrswX4P6stn6Rms",
-  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "nyT85v2S9QXML3Fu9F4DSKi9aukv6EZxHjizfFVaUaX5i4zMh7n26wHcWTAMidbJgT3b5FCe3q2ouRD9bUwhFTi",
+  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "3zakQKY3vXMubgz339Bvpqy9Yyc6j4tVNxPG2Fc7rpoJFCr9g6UquqUEVSJ8QgH5mmNLUHTsQ9ijAtWN5jMepaHT",
   "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "5a1jtsHECvHmUbJ6LJRUmTuKaMPxxQA8X33FooCAn6p8o1SguCLKtC8FKf6rv8zaFGChFBYBArjh79GYg1KKoCG5"
  },
  "wants": {}
