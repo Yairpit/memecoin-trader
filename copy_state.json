@@ -2446,16 +2446,8 @@
  ],
  "last_sig": {
   "CzU8MaRcwvwUoNkwJFLbvtFWJugcEXAhDDQqNFE4ybb7": "4gqpYSoYX4RKk66PJzvEkMbFSvSD7MTQzUx8AJ48dg9vKZAGqJLrSPZ8X5etpFem2w1ruSfk3QrswX4P6stn6Rms",
-  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "oi9qKw7bPgag38mjjGjc7Em5JQHx4Pk7iTbB8P6N9YfnnfHtRyRPMpayJeuvsALcnXDFkSfDuvssxPboCE6uLh3",
+  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "2KAFiae2U9r5v5XCMT4s1sxzUYVPQVdDaxQdutEPt4uGnXUsRrepsqp9h9jnxvnXeA2NQ9uA7sixUxj8gU2MJDeh",
   "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "5zziSSTPRgmpo5CoSkL13pDXCiEyJZLrrZVzieJZwdpR9h4r3DL1es4jhJwfTZpy2K6TJ8BCYvWdEekFwrYFky58"
  },
- "wants": {
-  "52a6B3qpwGN9daQBTu8kvbXQVgThuiGMJE1mmCEgpump": {
-   "trader": "Rowdy",
-   "cum": 555.5000000000329,
-   "usd_sum": 555.5000000000329,
-   "tok_sum": 8463614.284829998,
-   "since": 1795751117.8221827
-  }
- }
+ "wants": {}
 }
