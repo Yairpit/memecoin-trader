@@ -1,5 +1,5 @@
 {
- "cash": 129806.2699831613,
+ "cash": 129806.8642660937,
  "positions": {
   "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx": {
    "trader": "pointfarmcap",
@@ -13,8 +13,8 @@
   "8RNUw4N655VSrZKuhGdywhbSMDTrheguFPfxbpE2NZHQ": {
    "trader": "pointfarmcap",
    "symbol": "PURR",
-   "tokens": 1341.1394561849468,
-   "cost_usd": 1.8850866540050892,
+   "tokens": 854.1899253942013,
+   "cost_usd": 1.2006372796805982,
    "entry_price": 0.00139153,
    "trader_price": 0.0014472271108322528,
    "opened": 1793154455.9803402
@@ -2353,11 +2353,51 @@
    "proceeds": 0.11900611531119598,
    "pnl": -0.013860856614335365,
    "reason": "SELL"
+  },
+  {
+   "time": "2026-11-27 00:34:28",
+   "trader": "pointfarmcap",
+   "symbol": "PURR",
+   "mint": "8RNUw4N655VSrZKuhGdywhbSMDTrheguFPfxbpE2NZHQ",
+   "cost": 0.13038700561169098,
+   "proceeds": 0.11865555806816364,
+   "pnl": -0.01173144754352734,
+   "reason": "SELL"
+  },
+  {
+   "time": "2026-11-27 00:37:45",
+   "trader": "pointfarmcap",
+   "symbol": "PURR",
+   "mint": "8RNUw4N655VSrZKuhGdywhbSMDTrheguFPfxbpE2NZHQ",
+   "cost": 0.1357668026954677,
+   "proceeds": 0.11891350094674633,
+   "pnl": -0.016853301748721378,
+   "reason": "SELL"
+  },
+  {
+   "time": "2026-11-27 00:48:59",
+   "trader": "pointfarmcap",
+   "symbol": "PURR",
+   "mint": "8RNUw4N655VSrZKuhGdywhbSMDTrheguFPfxbpE2NZHQ",
+   "cost": 0.13560016917191367,
+   "proceeds": 0.11876755234025711,
+   "pnl": -0.016832616831656558,
+   "reason": "SELL"
+  },
+  {
+   "time": "2026-11-27 00:52:27",
+   "trader": "pointfarmcap",
+   "symbol": "PURR",
+   "mint": "8RNUw4N655VSrZKuhGdywhbSMDTrheguFPfxbpE2NZHQ",
+   "cost": 0.2826953968454186,
+   "proceeds": 0.2379463210537544,
+   "pnl": -0.044749075791664206,
+   "reason": "SELL"
   }
  ],
  "last_sig": {
   "CzU8MaRcwvwUoNkwJFLbvtFWJugcEXAhDDQqNFE4ybb7": "gd3woaeGfpdGK4Fbp3ZPwtKzMkZkrsrpsRs8ebaJabsNYyMN76gsBybPGSR5R8EWXHw6V3MyhyouCRre7EYce6o",
-  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "4maiEik5rzS2YdCJa2xk5agS5mQXd6HyEstYtKXg1sX4cktVDBptyHmUbfoPiRPpa6JMqWsYQj5VW4uu5NL2AkQq",
+  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "23gSgYXuh3gJd9Lnr8TnjQXQ8GY8QMZb4D68LDretfX1sssXGjCJtziUDjRy1JVvS3m6THmJRgCCzFW2fMbb2yGw",
   "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "2ibZczaGMaeZPhLGQ8abcdwcLourWzhyDUSZwVdwPNHWmP9NHsduSe1axvvgxC87dMuRR4B41jeMTbSEbyCZJxk4"
  },
  "wants": {}
