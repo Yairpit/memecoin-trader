@@ -2435,8 +2435,8 @@
   }
  ],
  "last_sig": {
-  "CzU8MaRcwvwUoNkwJFLbvtFWJugcEXAhDDQqNFE4ybb7": "gd3woaeGfpdGK4Fbp3ZPwtKzMkZkrsrpsRs8ebaJabsNYyMN76gsBybPGSR5R8EWXHw6V3MyhyouCRre7EYce6o",
-  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "64jB7aauxUGHfdk38xEVGwiWEqchFwrZTmNPfDBUdCxTsrDyfXDaTgua1ocCgQ5rbAMtjvDcAvgmDqEoBMkCv1rK",
+  "CzU8MaRcwvwUoNkwJFLbvtFWJugcEXAhDDQqNFE4ybb7": "5M2FrK6mhSuXZGfCtszfzMjHKc9wXRWLmLaB5Qy95wbKqBqg88NV8QoAHqQhb2JTFHL1FxArgxasTeav8SaQnLxN",
+  "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "4nSybVTwmuMfABcqhV8GrUkfLZ2X4PkZ64u7r64XiDuHKU8PAcxy8ugdESaEbQMLRpsCiqstvKScJczDQbWsJdqm",
   "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "4n2Tg5hyZCiw7Av4EukPnTwHb5Lj2oPoB68jtKcuM6KpqGijNWQKYZiPK3tmZbe9P1D53StXM61crXC83LZDUq81"
  },
  "wants": {
@@ -2446,6 +2446,13 @@
    "usd_sum": 1000.0,
    "tok_sum": 7.567376,
    "since": 1795746323.9827635
+  },
+  "52a6B3qpwGN9daQBTu8kvbXQVgThuiGMJE1mmCEgpump": {
+   "trader": "Rowdy",
+   "cum": 555.5000000000329,
+   "usd_sum": 555.5000000000329,
+   "tok_sum": 8463614.284829998,
+   "since": 1795751117.8221827
   }
  }
 }
