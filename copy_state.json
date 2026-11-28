@@ -2480,13 +2480,5 @@
   "Beqv6dzTcjV2eodo8RRXCiCcnSYrS1vkQKhfqwHXqeit": "4x3jTiPYntHNsUsfArqrSthm2tiuoEyjiWSopi5C1HiWzYtEQ7Chat7XiJ5VrMyqJs8VTPem3Hpt6z9qPQK96QoK",
   "83b2LMf12aLec92kur3duRA8VvUkLaXUtML31aCcZNCM": "2DtPrSZvswDtuJwTtvXv6WUG4HMzMCBaatKM77XNyRs4GhNKVDEL73tjMcBfo9kemGafCwApWBXbKeFsqpEdgNDj"
  },
- "wants": {
-  "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx": {
-   "trader": "pointfarmcap",
-   "cum": 4000.0,
-   "usd_sum": 4000.0,
-   "tok_sum": 118644.37170284241,
-   "since": 1795806359.0270195
-  }
- }
+ "wants": {}
 }
